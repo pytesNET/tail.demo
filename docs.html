@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="content-language" content="en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>tail.DateTime / Documentation</title>
+
+        <!-- Common -->
+        <meta name="author" content="SamBrishes, pytesNET" />
+        <meta name="publisher" content="SamBrishes, pytesNET" />
+        <meta name="copyright" content="SamBrishes, pytesNET" />
+
+        <meta name="name" content="tail.DateTime - A pure, vanilla JavaScript DateTime Picker" />
+        <meta name="description" content="A light-weight and Open Source Datetime Picker, written in pure vanilla JavaScript (Based on the PureJSCalendar Script)." />
+        <meta name="keywords" content="Date, DateTime, Time, Picker, Calendar, Clock, JavaScript, JS, Vanilla, Pure, Form, Formular, Input, GitHub, OpenSource, Free." />
+
+        <meta itemprop="name" content="tail.DateTime - A pure, vanilla JavaScript DateTime Picker" />
+        <meta itemprop="description" content="A light-weight and Open Source Datetime Picker, written in pure vanilla JavaScript (Based on the PureJSCalendar Script)." />
+        <meta itemprop="keywords" content="Date, DateTime, Time, Picker, Calendar, Clock, JavaScript, JS, Vanilla, Pure, Form, Formular, Input, GitHub, OpenSource, Free." />
+
+        <!-- Dublin Core -->
+        <meta name="DC.Language" content="en" />
+        <meta name="DC.Creator" content="SamBrishes, pytesNET" />
+        <meta name="DC.Publisher" content="SamBrishes, pytesNET" />
+        <meta name="DC.Rights" content="SamBrishes, pytesNET" />
+        <meta name="DC.Description" content="A light-weight and Open Source Datetime Picker, written in pure vanilla JavaScript (Based on the PureJSCalendar Script)." />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="pytesNET" />
+        <meta name="twitter:creator" content="pytesNET" />
+        <meta name="twitter:title" content="tail.DateTime - A pure, vanilla JavaScript DateTime Picker" />
+        <meta name="twitter:description" content="A light-weight and Open Source Datetime Picker, written in pure vanilla JavaScript (Based on the PureJSCalendar Script)." />
+
+        <!-- Open Graph -->
+        <meta name="og:type" content="website" />
+        <meta name="og:url" content="http://pytesNET.github.io/tail.DateTime" />
+        <meta name="og:locale" content="en" />
+        <meta name="og:title" content="tail.DateTime - A pure, vanilla JavaScript DateTime Picker" />
+        <meta name="og:site_name" content="tail.DateTime - A pure, vanilla JavaScript DateTime Picker" />
+        <meta name="og:description" content="A light-weight and Open Source Datetime Picker, written in pure vanilla JavaScript (Based on the PureJSCalendar Script)." />
+
+        <!-- Assets -->
+        <link type="text/css" rel="stylesheet" href="assets/css/tail.demo.css?ver=2.2.0" />
+        <link type="text/css" rel="stylesheet" href="assets/css/octicons.css?ver=8.1.0" />
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i|Oswald:400,500" />
+        <script type="text/javascript" src="assets/js/prism.min.js?ver=1.15.0"></script>
+        <script type="text/javascript" src="assets/js/menuspy.min.js?ver=1.3.0"></script>
+        <script type="text/javascript" src="assets/js/tail.demo.js?ver=2.2.0"></script>
+
+        <!-- Source -->
+        <link type="text/css" rel="stylesheet" href="source/css/tail.datetime.css?ver=0.3.4" />
+        <script type="text/javascript" src="source/js/tail.datetime.js?ver=0.3.4"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="container-left header-left">
+                    <a href="https://pytesnet.github.io/tail.DateTime" class="tail">
+                        <div class="tail-logo">
+                            <div class="tail-logo-circle"></div>
+                        </div>
+                        <div class="tail-project">
+                            <span class="tail-title">tail.<b>DateTime</b></span>
+                            <span class="tail-version">0.3.4 - <b>Alpha</b></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="container-right header-right">
+                    <ul class="main-navi">
+                        <li class="navi-item item-internal active"><a href="./index.html"><span>Demo</span></a></li>
+                        <li class="navi-item item-internal"><a href="./docs.html"><span>Docs</span></a></li>
+
+                        <li class="navi-item item-external">
+                            <a href="https://www.github.com/pytesNET/tail.DateTime"><span class="octicon octicon-mark-github"></span></a>
+                        </li>
+                        <li class="navi-item item-external">
+                            <a href="https://github.com/pytesNET/tail.DateTime/tarball/master" class="tar"><span>.TAR</span></a><a href="https://github.com/pytesNET/tail.DateTime/zipball/master" class="zip"><span>.ZIP</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="toolbar">
+            <div class="container">
+                <div class="container-left toolbar-left">
+                    <span class="label">Written in</span>
+                    <span class="javascript" data-tooltip="Vanilla JavaScript">JavaScript</span>
+                </div>
+                <div class="container-right toolbar-right">
+                    <ul>
+                        <li class="firefox" data-tooltip="Mozilla Firefox"></li>
+                        <li class="chrome" data-tooltip="Google Chrome"></li>
+                        <li class="opera" data-tooltip="Opera"></li>
+                        <li class="ie" data-tooltip="Internet Explorer"></li>
+                    </ul>
+                    <span class="label">Supported</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <section class="docs-content">
+                <div class="container">
+                    <aside>
+                        <ul class="docs-navi" data-handle="menuspy">
+                            <li class="navi-item active"><a href="#about">About tail.DateTime</a></li>
+                            <li class="navi-item"><a href="#docs">Documentation</a></li>
+                            <li class="navi-item"><a href="#install">‒ Install & Embed</a></li>
+                            <li class="navi-item"><a href="#howto">‒ How to Use</a></li>
+                            <li class="navi-item"><a href="#config">‒ How to Configurate</a></li>
+                            <li class="navi-item"><a href="#options">‒ ‒ Available Options</a></li>
+                        </ul>
+                    </aside>
+                    <article class="inner inner-menuspy">
+                        <h1 id="about">About tail.DateTime</h1>
+                        <a href="https://www.npmjs.com/package/tail.datetime" class="less">
+                            <img src="https://img.shields.io/npm/v/tail.datetime.svg?style=flat-square" alt="NPM Version" />
+                        </a>
+                        <a href="https://www.npmjs.com/package/tail.datetime" class="less">
+                            <img src="https://img.shields.io/npm/dt/tail.datetime.svg?style=flat-square" alt="NPM Downloads" />
+                        </a>
+                        <a href="https://github.com/pytesNET/tail.DateTime/blob/master/LICENSE.md" class="less">
+                            <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Software License" />
+                        </a>
+                        <a href="https://plainjs.com/javascript/plugins/taildatetime-187/" class="less">
+                            <img src="https://img.shields.io/badge/plainJS-%E2%98%85%E2%98%85%E2%98%85%E2%98%85%E2%98%85-yellow.svg?style=flat-square" alt="plainJS" />
+                        </a>
+                        <p>
+                            The <b>tail.DateTime</b> script is a fork of MrGuiseppes <a href="https://github.com/MrGuiseppe/pureJSCalendar" target="_blanks">Pure JS Calendar</a> script, which contains the following changes:
+                        </p>
+                        <ul>
+                            <li>A Time Picker (Hours, Minutes, Seconds)</li>
+                            <li>A Month-Based browse view</li>
+                            <li>A slightly different date/time output format</li>
+                            <li>A slightly different HTML class/id layout</li>
+                            <li>A different JS structure / implementation / constructur (Prototyping)</li>
+                            <li>Key Listener for 'Escape' (Close) and 'Enter' (Use Today / First Day of the month)</li>
+                            <li>Auto-Close on click outside of the calendar popup / input element</li>
+                            <li>Instance Caching + Calendar Caching with the first day in the week</li>
+                            <li>Default value depending on the input field</li>
+                            <li>"Translatable" Strings through the global variable</li>
+                            <li>And many more... Check out the Changelog for details.</li>
+                        </ul>
+
+                        <h1 id="docs">Documentation</h1>
+
+                        <div class="message">
+                            <div class="message-inner">This documentation is still <b>Work in Progress</b> and doesn't contain the complete <b>tail.DateTime</b> environment!</div>
+                        </div>
+
+                        <h2 id="install">Install & Embed</h2>
+                        <p>
+                            You can download and install the <b>tail.DateTime</b> package using one of the 2 buttons (<a href="https://github.com/pytesNET/tail.DateTime/tarball/master" class="less"><kbd>.tar</kbd></a>
+                            or <a href="https://github.com/pytesNET/tail.DateTime/zipball/master" class="less"><kbd>.zip</kbd></a>) above in the header, or by callin NPM <code class="blue">npm install tail.DateTime</code>
+                            or Yarn <code class="blue">yarn add tail.DateTime</code> directly in your console, if you have the respective package manager installed of course.
+                        </p>
+                        <p>
+                            You can also use the CDN jsDelivr or unpkg to receive the <b>tail.DateTime</b> script without to download the package itself:
+                        </p>
+                        <pre>https://cdn.jsdelivr.net/npm/tail.datetime@latest/</pre>
+                        <pre>https://unpkg.com/tail.datetime</pre>
+
+                        <p>
+                            No matter which way you take, you still need to embed the JavaScript as well as the Stylesheet in your HTML document and please don't forget to embed the desired language
+                            JavaScript and theme stylesheet file too. We recommend to load the stylesheets within the HTML header and the JavaScript files directly after the opened <code class="invert">&lt;body&gt;</code> HTML tag.
+                        </p>
+                        <pre class="language-markup line-numbers"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8" /&gt;
+        &lt;title&gt;Example Site&lt;/title&gt;
+
+        &lt;link type="text/css" rel="stylesheet" href="css/tail.datetime.css" /&gt;
+        &lt;link type="text/css" rel="stylesheet" href="css/tail.datetime.white.css" /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;script type="text/javascript" src="js/tail.datetime.min.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="langs/tail.datetime-de.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+                        <h2 id="howto">How to Use</h2>
+                        <p>
+                            The <b>tail.DateTime</b> script needs a <code class="invert">input</code> element, where it builds up the respective environment. Just add this HTML Element
+                            anywhere you need and call the <code class="red">tail.DateTime()</code> function, optimally within the <code class="invert">DOMContentLoaded</code> event to
+                            prevent beforeLoading failures. The global <code class="red">tail.DateTime()</code> function allows 2 arguments. The first MUST be
+                        </p>
+                        <ul>
+                            <li>... a (HTML) Element Object (<code class="invert">getElementById</code>, <code class="invert">querySelector</code>)</li>
+                            <li>... a (HTML) Element List Object (<code class="invert">getElementsBy*</code>, <code class="invert">querySelectorAll</code>)</li>
+                            <li>... an Array with Element Objects (<code class="invert">[getElementById, getElementById]</code>)</li>
+                        </ul>
+                        <p>
+                            or just a STRING selector like <code class="invert">"input[type="datetime-local"]"</code>, which equals the <code class="invert">querySelectorAll</code> method.
+                        </p>
+                        <p>
+                            The second parameter CAN be an object with respective key => value based options, check out the list below to find all available options. You can also skip this and just use the default settings.
+                        </p>
+<pre class="language-javascript line-numbers"><code>document.addEventListener("DOMContentLoaded", function(){
+    tail.DateTime("input[type='datetime-local']");
+});</code></pre>
+                    </article>
+                </div>
+            </section>
+
+            <section class="demo-content demo-poser invert">
+                <div class="container">
+                    <header>
+                        <div class="badge badge-red">
+                            <span class="badge-icon"><span class="octicon octicon-question"></span></span>
+                            <span class="badge-inner">You still have a Question?</span>
+                        </div>
+                    </header>
+                    <br />
+                    <article class="bordered inner">
+                        <p>
+                            Our GitHub Repository is open for every Question, Idea, Suggestion or any other Issue.<br />
+                            Don't be shy, we are happy to help you!
+                        </p>
+                    </article>
+                    <article class="inner" style="padding:50px 30px 0 30px;">
+                        <p>
+                            <a href="https://www.github.com/pytesNET/tail.DateTime/issues" class="github-special-white">
+                                Ask Us on <span class="octicon octicon-mark-github"></span>
+                            </a>
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="docs-content">
+                <div class="container">
+                    <article class="inner inner-menuspy">
+                        <h2 id="config">How to Configure</h2>
+                        <p>
+                            The <b>tail.DateTime</b> DateTime Picker should now already work, but you can still configure the interface, the design as well as the behavior with the following options:
+                        </p>
+<pre class="language-javascript line-numbers"><code>document.addEventListener("DOMContentLoaded", function(){
+
+    // The settings below are the defaults!
+    tail.DateTime("input[type='datetime-local']", {
+        static: null,
+        position: "bottom",
+        classNames: "",
+        dateFormat: "YYYY-mm-dd",
+        timeFormat: "HH:ii:ss",
+        dateRanges: [],
+        weekStart: "SUN",
+        startOpen: false,
+        stayOpen: false,
+        zeroSeconds: false
+    });
+});</code></pre>
+
+                        <h3 id="options">Available Options</h3>
+                        <dl>
+                            <dt>static</dt>
+                            <dd><code>string</code><br /> Pass an valid selector of an element where the Calendar Popup should be append to, leave it on null to use the absolute position calculation.</dd>
+
+                            <dt>position</dt>
+                            <dd><code>string</code><br /> Sets the position of the DateTime popup field to <code class="invert">"top"</code>, <code class="invert">"left"</code>, <code class="invert">"right"</code> or <code class="invert">"bottom"</code>. This option <b>does not</b> work if you pass an valid selector on <code class="invert">static</code>!</dd>
+
+                            <dt>classNames</dt>
+                            <dd><code>string|array</code><br /> Adds custom class names to the main DateTime container element, pass and array or an space-separated list!</dd>
+
+                            <dt>dateFormat</dt>
+                            <dd><code>string|bool</code><br /> Pass an valid Date/Time Format (see below) or pass <code class="invert">false</code> to disable the Date picker.</dd>
+
+                            <dt>timeFormat</dt>
+                            <dd><code>string|bool</code><br /> Pass an valid Date/Time Format (see below) or pass <code class="invert">false</code> to disable the Time picker.</dd>
+
+                            <dt>dateRanges</dt>
+                            <dd><code>array</code><br /> This option allows you to create one or more selectable periods of time. Each period defines itself through an array, where the first value if the start-point and the last one the end-point (which is also optional).  You can use a <code class="invert">Date</code> object as value, a string as <code class="invert">YYYY-MM-DD</code> or the (translated) name of a weekday (See <code class="invert">tailDateTime.strings.shorts</code>).
+                            <p><b>Example</b></p>
+                            <p>The following Example limits the selectable area to:</p>
+                            <ul>
+                                <li>From 2018-10-12 up to 2018-10-26</li>
+                                <li>From 2018-11-04 up to 2018-11-30</li>
+                                <li>From 2018-12-01 up to 2018-12-31</li>
+                                <li><b>In all cases only from Monday up to Friday</b> (Sunday and Saturday are not selectable)</li>
+                            </ul>
+                            <p>
+                                The last array <code class="invert">["MON", "FRI"]</code> limits <b>only</b> all selections before! If you want to just use a selection between Monday and Friday in general, add a third parameters with <code class="invert">true</code>.
+                            </p>
+<pre class="language-javascript line-numbers"><code>tail.DateTime("input[type='datetime-local']", {
+    dateRanges: [
+        [new Date(2018, 9, 12), new Date(2018, 9, 26)],
+        ["2018-11-4", "2018-11-30"],
+        [new Date(2018, 11, 1), new Date(2018, 11, 31)],
+        ["MON", "FRI"]
+    ]
+});</code></pre>
+                            </dd>
+
+                            <dt>weekStart</dt>
+                            <dd><code>string</code><br /> Pass the (translated) string of the global variable <code class="invert">tailDateTime.strings.shorts</code> to change the shown first day in the week. (If no translation has been made, you can choose between: "SUN", "MON", "TUE", "WED", "THU", "FRI" and "SAT")</dd>
+
+                            <dt>startOpen</dt>
+                            <dd><code>bool</code><br /> Use true to show the DateTime Picker directly after the initialization.</dd>
+
+                            <dt>stayOpen</dt>
+                            <dd><code>bool</code><br /> Use true to keep the DateTime Picker open, even if an selection has been made or any other closing event has been triggered! (You can still close the DateTime Picker with the <code class="invert">close()</code> method!)</dd>
+
+                            <dt>zeroSeconds</dt>
+                            <dd><code>bool</code><br /> Use true to set the seconds to <code class="invert">00</code>. This would be happen once, during the initialization.</dd>
+                        </dl>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="container-left footer-left">
+                    Copyright &copy; 2018 SamBrishes @ pytesNET<br />
+                    Published under the MIT / X11 License
+                </div>
+                <div class="container-right footer-right">
+                    Star, Fork and Download on <a href="https://github.com/pytesNET/tail.DateTime"><span class="octicon octicon-logo-github"></span>!</a><br />
+                    This Page uses <a href="https://prismjs.com/" target="_blank">prismJS</a> and <a href="https://github.com/lcdsantos/menuspy" target="_blank">MenuSpy</a>!
+                </div>
+            </div>
+        </div>
+
+        <div class="js-footer"></div>
+    </body>
+</html>

@@ -1,0 +1,186 @@
+/*
+ |  tail.DateTime - A pure, vanilla JavaScript DateTime Picker
+ |  @author        SamBrishes <https://github.com/pytesNET/tail.DateTime/>
+ |                 MrGuiseppe <https://github.com/MrGuiseppe/pureJSCalendar/>
+ |  @version       0.3.4 - Alpha
+ |
+ |  @license       X11 / MIT License
+ |  @copyright     Copyright © 2018 - SamBrishes, pytesNET <pytes@gmx.net>
+ |                 Copyright © 2018 - MrGuiseppe <https://github.com/MrGuiseppe>
+ */
+
+/* @start tail.DateTime */
+.tail-datetime-calendar{
+    width: 360px;
+    background-color: #ffffff;
+    border-collapse: separate;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+}
+.tail-datetime-calendar .calendar-navi{
+    background-color: #ffffff;
+}
+.tail-datetime-calendar .calendar-navi span{
+    color: #000000;
+    opacity: 0.5;
+    line-height: 40px;
+    text-shadow: none;
+    transition: opacity 142ms linear, background 142ms linear;
+    -webkit-transition: opacity 142ms linear, background 142ms linear;
+}
+.tail-datetime-calendar .calendar-navi span:first-child,
+.tail-datetime-calendar .calendar-navi span:last-child{
+    width: 50px;
+}
+.tail-datetime-calendar .calendar-navi span:hover{
+    opacity: 0.95;
+    background-color: #f0f0f0;
+}
+.tail-datetime-calendar .calendar-navi span.button-prev{
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC\
+    9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgNiAxNiI+PHBhdGggZD0iTTYgMkwwIDhsNiA2VjJ6I\
+    i8+PC9zdmc+");
+}
+.tail-datetime-calendar .calendar-navi span.button-next{
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC\
+    9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgNiAxNiI+PHBhdGggZD0iTTAgMTRsNi02LTYtNnYxM\
+    noiLz48L3N2Zz4=");
+}
+.tail-datetime-calendar .calendar-navi span.button-check{
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC\
+    9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDEyIDE2Ij48cGF0aCBkPSJNMTIgNWwtOCA4LTQtN\
+    CAxLjUtMS41TDQgMTBsNi41LTYuNUwxMiA1eiIvPjwvc3ZnPg==");
+}
+.tail-datetime-calendar .calendar-navi span.button-close{
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC\
+    9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDEyIDE2Ij48cGF0aCBkPSJNNy40OCA4bDMuNzUgM\
+    y43NS0xLjQ4IDEuNDhMNiA5LjQ4bC0zLjc1IDMuNzUtMS40OC0xLjQ4TDQuNTIgOCAuNzcgNC4yNWwxLjQ4LTEuNDhMNiA2\
+    LjUybDMuNzUtMy43NSAxLjQ4IDEuNDhMNy40OCA4eiIvPjwvc3ZnPg==");
+}
+.tail-datetime-calendar .calendar-date{
+    position: relative;
+}
+.tail-datetime-calendar .calendar-date:after{
+    top: 0;
+    left: 10px;
+    right: 10px;
+    content: "";
+    position: absolute;
+    border-top: 1px solid #e0e0e0;
+}
+.tail-datetime-calendar .calendar-date table{
+    border-spacing: 1px;
+    border-collapse: separate;
+}
+.tail-datetime-calendar .calendar-date table thead tr > *,
+.tail-datetime-calendar .calendar-date table tbody tr > *{
+    color: #40454a;
+    width: 50px;
+    height: 35px;
+    background-color: #ffffff;
+}
+.tail-datetime-calendar .calendar-date table tbody tr > *{
+    color: #40454a;
+    background-color: #ffffff;
+}
+
+/* Select a Day */
+.tail-datetime-calendar .calendar-date table tbody tr > *:after{
+    display: none;
+}
+.tail-datetime-calendar .calendar-date table tbody tr > *{
+    border: 1px solid transparent;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.tail-datetime-calendar .calendar-date table tbody tr > *.today{
+    color: #3296C8;
+    border-color: #3296C8;
+}
+.tail-datetime-calendar .calendar-date table tbody tr > *:hover{
+    color: #CD283C;
+    border-color: #CD283C;
+}
+.tail-datetime-calendar .calendar-date table tbody tr > *.current{
+    border-color: #3296C8;
+    background-color: #3296C8;
+}
+.tail-datetime-calendar .calendar-date table tbody tr > *.current span{
+    color: #fff;
+}
+.tail-datetime-calendar .calendar-date table tbody tr > *.empty,
+.tail-datetime-calendar .calendar-date table tbody tr > *.empty:hover,
+.tail-datetime-calendar .calendar-date table tbody tr > *.disable,
+.tail-datetime-calendar .calendar-date table tbody tr > *.disable:hover{
+    color: #b0b5ba;
+    border-color: transparent;
+    background-color: #fff;
+}
+
+/* Select A Month */
+.tail-datetime-calendar .calendar-date table.calendar-month tbody tr > *{
+    width: 33.33333%;
+}
+.tail-datetime-calendar .calendar-date table.calendar-month tbody tr > *:hover span{
+    border-color: transparent;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.tail-datetime-calendar .calendar-date table.calendar-month thead{
+    text-transform: uppercase;
+}
+
+/* Select a Time */
+.tail-datetime-calendar .calendar-time{
+    position: relative;
+    border: 0;
+    background-color: #ffffff;
+}
+.tail-datetime-calendar .calendar-time:after{
+    top: 0;
+    left: 10px;
+    right: 10px;
+    content: "";
+    position: absolute;
+    border-top: 1px solid #e0e0e0;
+}
+.tail-datetime-calendar .calendar-time .calendar-field{
+    padding: 20px 0;
+}
+.tail-datetime-calendar .calendar-time .calendar-field:first-child:after,
+.tail-datetime-calendar .calendar-time .calendar-field:last-child:after{
+    top: 24px;
+}
+.tail-datetime-calendar .calendar-time .calendar-field:first-child:after{
+    right: -15px;
+}
+.tail-datetime-calendar .calendar-time .calendar-field:last-child:after{
+    top: 24px;
+}
+.tail-datetime-calendar .calendar-time .calendar-field:last-child:after{
+    left: -15px;
+}
+.tail-datetime-calendar .calendar-time .calendar-field input[type="number"]{
+    max-width: 65px;
+    padding: 5px 10px;
+    border-color: #e0e0e0;
+    background-color: #ffffff;
+    transition: border 142ms linear;
+    -webkit-transition: border 142ms linear;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+.tail-datetime-calendar .calendar-time .calendar-field input[type="number"]:hover{
+    border-color: #c0c0c0;
+}
+.tail-datetime-calendar .calendar-time .calendar-field input[type="number"]:focus{
+    border-color: #3296C8;
+}
+.tail-datetime-calendar .calendar-time .calendar-field label{
+    color: #778899;
+}
+.tail-datetime-calendar .calendar-actions{
+    border-color: #d0d0d0;
+    background-color: #ffffff;
+}
+/* @end tail.DateTime */

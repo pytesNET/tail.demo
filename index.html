@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="content-language" content="en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>tail.DateTime - A pure, vanilla JavaScript DateTime Picker</title>
+
+        <!-- Common -->
+        <meta name="author" content="SamBrishes, pytesNET" />
+        <meta name="publisher" content="SamBrishes, pytesNET" />
+        <meta name="copyright" content="SamBrishes, pytesNET" />
+
+        <meta name="name" content="tail.DateTime - A pure, vanilla JavaScript DateTime Picker" />
+        <meta name="description" content="A light-weight and Open Source Datetime Picker, written in pure vanilla JavaScript (Based on the PureJSCalendar Script)." />
+        <meta name="keywords" content="Date, DateTime, Time, Picker, Calendar, Clock, JavaScript, JS, Vanilla, Pure, Form, Formular, Input, GitHub, OpenSource, Free." />
+
+        <meta itemprop="name" content="tail.DateTime - A pure, vanilla JavaScript DateTime Picker" />
+        <meta itemprop="description" content="A light-weight and Open Source Datetime Picker, written in pure vanilla JavaScript (Based on the PureJSCalendar Script)." />
+        <meta itemprop="keywords" content="Date, DateTime, Time, Picker, Calendar, Clock, JavaScript, JS, Vanilla, Pure, Form, Formular, Input, GitHub, OpenSource, Free." />
+
+        <!-- Dublin Core -->
+        <meta name="DC.Language" content="en" />
+        <meta name="DC.Creator" content="SamBrishes, pytesNET" />
+        <meta name="DC.Publisher" content="SamBrishes, pytesNET" />
+        <meta name="DC.Rights" content="SamBrishes, pytesNET" />
+        <meta name="DC.Description" content="A light-weight and Open Source Datetime Picker, written in pure vanilla JavaScript (Based on the PureJSCalendar Script)." />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="pytesNET" />
+        <meta name="twitter:creator" content="pytesNET" />
+        <meta name="twitter:title" content="tail.DateTime - A pure, vanilla JavaScript DateTime Picker" />
+        <meta name="twitter:description" content="A light-weight and Open Source Datetime Picker, written in pure vanilla JavaScript (Based on the PureJSCalendar Script)." />
+
+        <!-- Open Graph -->
+        <meta name="og:type" content="website" />
+        <meta name="og:url" content="http://pytesNET.github.io/tail.DateTime" />
+        <meta name="og:locale" content="en" />
+        <meta name="og:title" content="tail.DateTime - A pure, vanilla JavaScript DateTime Picker" />
+        <meta name="og:site_name" content="tail.DateTime - A pure, vanilla JavaScript DateTime Picker" />
+        <meta name="og:description" content="A light-weight and Open Source Datetime Picker, written in pure vanilla JavaScript (Based on the PureJSCalendar Script)." />
+
+        <!-- Assets -->
+        <link type="text/css" rel="stylesheet" href="assets/css/tail.demo.css?ver=2.2.0" />
+        <link type="text/css" rel="stylesheet" href="assets/css/octicons.css?ver=8.1.0" />
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i|Oswald:400,500" />
+        <script type="text/javascript" src="assets/js/prism.min.js?ver=1.15.0"></script>
+        <script type="text/javascript" src="assets/js/tail.demo.js?ver=2.2.0"></script>
+
+        <!-- Source -->
+        <link type="text/css" rel="stylesheet" href="assets/css/tail.demo.datetime.css?ver=0.3.4" />
+        <script type="text/javascript" src="source/js/tail.datetime.js?ver=0.3.4"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="container-left header-left">
+                    <a href="https://pytesnet.github.io/tail.DateTime" class="tail">
+                        <div class="tail-logo">
+                            <div class="tail-logo-circle"></div>
+                        </div>
+                        <div class="tail-project">
+                            <span class="tail-title">tail.<b>DateTime</b></span>
+                            <span class="tail-version">0.3.4 - <b>Alpha</b></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="container-right header-right">
+                    <ul class="main-navi">
+                        <li class="navi-item item-internal active"><a href="./index.html"><span>Demo</span></a></li>
+                        <li class="navi-item item-internal"><a href="./docs.html"><span>Docs</span></a></li>
+
+                        <li class="navi-item item-external">
+                            <a href="https://www.github.com/pytesNET/tail.DateTime"><span class="octicon octicon-mark-github"></span></a>
+                        </li>
+                        <li class="navi-item item-external">
+                            <a href="https://github.com/pytesNET/tail.DateTime/tarball/master" class="tar"><span>.TAR</span></a><a href="https://github.com/pytesNET/tail.DateTime/zipball/master" class="zip"><span>.ZIP</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="toolbar">
+            <div class="container">
+                <div class="container-left toolbar-left">
+                    <span class="label">Written in</span>
+                    <span class="javascript" data-tooltip="Vanilla JavaScript">JavaScript</span>
+                </div>
+                <div class="container-right toolbar-right">
+                    <ul>
+                        <li class="firefox" data-tooltip="Mozilla Firefox"></li>
+                        <li class="chrome" data-tooltip="Google Chrome"></li>
+                        <li class="opera" data-tooltip="Opera"></li>
+                        <li class="ie" data-tooltip="Internet Explorer"></li>
+                    </ul>
+                    <span class="label">Supported</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <section class="demo-content">
+                <div class="container">
+                    <header><h1>A simple <b>DateTime</b> Picker...</header>
+                    <article class="side-by-side separated">
+                        <aside>
+                            <h1>Default Design</h1>
+                            <div class="example">
+                                <input type="text" id="datetime-1" class="datetime" />
+                                <div id="datetime-1-holder" class="datetime-folder"></div>
+                            </div>
+                        </aside>
+                        <aside>
+                            <h1>White Design</h1>
+                            <div class="example">
+                                <input type="text" id="datetime-2" class="datetime" />
+                                <div id="datetime-2-holder" class="datetime-folder"></div>
+                            </div>
+                        </aside>
+                    </article>
+                    <footer>
+                        <div class="example-label" data-handle="example">Show Example Code</div>
+                        <div class="example-code">
+                            <div>
+<pre class="language-javascript line-numbers"><code>tail.DateTime("#datetime-1", {
+    static: "#datetime-1-holder",   /* Used for demonstration */
+    classNames: "theme-default",    /* Used for demonstration */
+    startOpen: true,                /* Used for demonstration */
+    stayOpen: true,                 /* Used for demonstration */
+});</code></pre>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </section>
+
+            <section class="demo-content">
+                <div class="container">
+                    <header><h1>... with configurable <b>Ranges</b> of selectable <b>Dates</b></h1></header>
+                    <article class="side-by-side separated">
+                        <aside>
+                            <h1>Default Design</h1>
+                            <div class="example">
+                                <input type="text" id="datetime-3" class="datetime" />
+                                <div id="datetime-3-holder" class="datetime-folder"></div>
+                            </div>
+                        </aside>
+                        <aside>
+                            <h1>White Design</h1>
+                            <div class="example">
+                                <input type="text" id="datetime-4" class="datetime" />
+                                <div id="datetime-4-holder" class="datetime-folder"></div>
+                            </div>
+                        </aside>
+                    </article>
+                    <footer>
+                        <div class="example-label" data-handle="example">Show Example Code</div>
+                        <div class="example-code">
+                            <div>
+<pre class="lang-javascript line-numbers"><code>var month = new Date().getMonth();
+
+tail.DateTime("#datetime-3", {
+    dateRanges: [
+        [new Date(2018, month, 12), new Date(2018, month, 26)],
+        ["2018-" + month.toString() + "-4", "2018-" + month.toString() + "-30"],
+        [new Date(2018, month+1, 1), new Date(2018, month+1, 31)],
+        ["MON", "FRI"]
+    ],
+
+    static: "#datetime-3-holder",   /* Used for demonstration */
+    classNames: "theme-default",    /* Used for demonstration */
+    startOpen: true,                /* Used for demonstration */
+    stayOpen: true,                 /* Used for demonstration */
+});</code></pre>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </section>
+
+            <section class="demo-content">
+                <div class="container">
+                    <header><h1>Simple used as <b>Time</b> Picker</h1></header>
+                    <article class="side-by-side separated">
+                        <aside>
+                            <h1>Default Design</h1>
+                            <div class="example">
+                                <input type="text" id="datetime-5" class="datetime" />
+                                <div id="datetime-5-holder" class="datetime-folder"></div>
+                            </div>
+                        </aside>
+                        <aside>
+                            <h1>White Design</h1>
+                            <div class="example">
+                                <input type="text" id="datetime-6" class="datetime" />
+                                <div id="datetime-6-holder" class="datetime-folder"></div>
+                            </div>
+                        </aside>
+                    </article>
+                    <footer>
+                        <div class="example-label" data-handle="example">Show Example Code</div>
+                        <div class="example-code">
+                            <div>
+<pre class="lang-javascript line-numbers"><code>tail.DateTime("#datetime-5", {
+    dateFormat: false,
+
+    static: "#datetime-5-holder",   /* Used for demonstration */
+    classNames: "theme-default",    /* Used for demonstration */
+    startOpen: true,                /* Used for demonstration */
+    stayOpen: true,                 /* Used for demonstration */
+});</code></pre>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </section>
+
+            <section class="demo-content">
+                <div class="container">
+                    <header><h1>Simple used as <b>Date</b> Picker</h1></header>
+                    <article class="side-by-side separated">
+                        <aside>
+                            <h1>Default Design</h1>
+                            <div class="example">
+                                <input type="text" id="datetime-7" class="datetime" />
+                                <div id="datetime-7-holder" class="datetime-folder"></div>
+                            </div>
+                        </aside>
+                        <aside>
+                            <h1>White Design</h1>
+                            <div class="example">
+                                <input type="text" id="datetime-8" class="datetime" />
+                                <div id="datetime-8-holder" class="datetime-folder"></div>
+                            </div>
+                        </aside>
+                    </article>
+                    <footer>
+                        <div class="example-label" data-handle="example">Show Example Code</div>
+                        <div class="example-code">
+                            <div>
+<pre class="lang-javascript line-numbers"><code>tail.DateTime("#datetime-7", {
+    timeFormat: false,
+
+    static: "#datetime-7-holder",   /* Used for demonstration */
+    classNames: "theme-default",    /* Used for demonstration */
+    startOpen: true,                /* Used for demonstration */
+    stayOpen: true,                 /* Used for demonstration */
+});</code></pre>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </section>
+
+            <section class="demo-content invert">
+                <div class="container">
+                    <header>
+                        <div class="badge badge-green">
+                            <span class="badge-icon"><span class="octicon octicon-mark-github"></span></span>
+                            <span class="badge-inner">We need your Support</span>
+                        </div>
+                    </header>
+                    <article class="bordered inner">
+                        <p>
+                            We need <mark>your help</mark> to make the <b>tail.DateTime</b> script as comfortable and stable as possible!<br />
+                            Please report each issue and request your ideas and suggestions on our Github Repository!
+                        </p>
+                    </article>
+                    <article class="inner" style="padding:50px 30px 0 30px;">
+                        <p>
+                            <a href="https://www.github.com/pytesNET/tail.DateTime" class="github-special-white">
+                                Written with <span class="octicon octicon-heart"></span> on <span class="octicon octicon-mark-github"></span>
+                            </a>
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="demo-content">
+                <div class="container">
+                    <header><h1>A DateTime Picker with an custom <b>Output</b> Format</h1></header>
+                    <article class="side-by-side separated">
+                        <aside>
+                            <h1>Default Design</h1>
+                            <div class="example">
+                                <input type="text" id="datetime-9" class="datetime" data-tail-value="1993-03-17 20:15:30" />
+                                <div id="datetime-9-holder" class="datetime-folder"></div>
+                            </div>
+                        </aside>
+                        <aside>
+                            <h1>White Design</h1>
+                            <div class="example">
+                                <input type="text" id="datetime-10" class="datetime" data-tail-value="1980-12-28 12:15:30" />
+                                <div id="datetime-10-holder" class="datetime-folder"></div>
+                            </div>
+                        </aside>
+                    </article>
+                    <footer>
+                        <div class="example-label" data-handle="example">Show Example Code</div>
+                        <div class="example-code">
+                            <div>
+<pre class="lang-javascript line-numbers"><code>tail.DateTime("#datetime-9", {
+    dateFormat: "M. dd, YYYY -",    /* "(D) dd. F YYYY -" used on the right */
+
+    static: "#datetime-9-holder",   /* Used for demonstration */
+    classNames: "theme-default",    /* Used for demonstration */
+    startOpen: true,                /* Used for demonstration */
+    stayOpen: true,                 /* Used for demonstration */
+});</code></pre>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </section>
+
+            <section class="demo-content">
+                <div class="container">
+                    <header><h1>A <b>non-static</b> DateTime Picker</h1></header>
+                    <article class="separated">
+                        <div class="example">
+                            <input type="text" id="datetime-11" class="datetime" placeholder="Bottom Position" />
+                        </div>
+                        <div class="example">
+                            <input type="text" id="datetime-12" class="datetime" placeholder="Left Position" />
+                        </div>
+                        <div class="example">
+                            <input type="text" id="datetime-13" class="datetime" placeholder="Right Position" />
+                        </div>
+                        <div class="example">
+                            <input type="text" id="datetime-14" class="datetime" placeholder="Top Position" />
+                        </div>
+                    </article>
+                    <footer>
+                        <div class="example-label" data-handle="example">Show Example Code</div>
+                        <div class="example-code">
+                            <div>
+<pre class="lang-javascript line-numbers"><code>tail.DateTime("#datetime-11", {
+    position: "bottom"      /* "left", "right", "top" */
+});</code></pre>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </section>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="container-left footer-left">
+                    Copyright &copy; 2018 SamBrishes @ pytesNET<br />
+                    Published under the MIT / X11 License
+                </div>
+                <div class="container-right footer-right">
+                    Star, Fork and Download on <a href="https://github.com/pytesNET/tail.DateTime"><span class="octicon octicon-logo-github"></span>!</a><br />
+                    This Page uses <a href="https://prismjs.com/" target="_blank">prismJS</a> and <a href="https://github.com/lcdsantos/menuspy" target="_blank">MenuSpy</a>!
+                </div>
+            </div>
+        </div>
+
+        <div class="js-footer">
+            <script type="text/javascript">
+                document.addEventListener("DOMContentLoaded", function(){
+                    var d = document, cur = new Date();
+
+                    // Default Demonstration
+                    tail.DateTime("#datetime-1", {
+                        static: "#datetime-1-holder",
+                        classNames: "theme-default",    /* Used for demonstration */
+                        startOpen: true,                /* Used for demonstration */
+                        stayOpen: true,                 /* Used for demonstration */
+                    });
+                    tail.DateTime("#datetime-2", {
+                        static: "#datetime-2-holder",   /* Used for demonstration */
+                        classNames: "theme-white",      /* Used for demonstration */
+                        startOpen: true,                /* Used for demonstration */
+                        stayOpen: true,                 /* Used for demonstration */
+                    });
+
+                    // DateRange Demonstration
+                    var month = new Date().getMonth();
+                    tail.DateTime("#datetime-3", {
+                        dateRanges: [
+                            [new Date(2018, month, 12), new Date(2018, month, 26)],
+                            ["2018-" + month.toString() + "-4", "2018-" + month.toString() + "-30"],
+                            [new Date(2018, month+1, 1), new Date(2018, month+1, 31)],
+                            ["MON", "FRI"]
+                        ],
+                        static: "#datetime-3-holder",   /* Used for demonstration */
+                        classNames: "theme-default",    /* Used for demonstration */
+                        startOpen: true,                /* Used for demonstration */
+                        stayOpen: true,                 /* Used for demonstration */
+                    });
+                    tail.DateTime("#datetime-4", {
+                        dateRanges: [
+                            [new Date(2018, month, 12), new Date(2018, month, 26)],
+                            ["2018-" + month.toString() + "-4", "2018-" + month.toString() + "-30"],
+                            [new Date(2018, month+1, 1), new Date(2018, month+1, 31)],
+                            ["MON", "FRI"]
+                        ],
+                        static: "#datetime-4-holder",   /* Used for demonstration */
+                        classNames: "theme-white",      /* Used for demonstration */
+                        startOpen: true,                /* Used for demonstration */
+                        stayOpen: true,                 /* Used for demonstration */
+                    });
+
+                    // Time Demonstration
+                    tail.DateTime("#datetime-5", {
+                        dateFormat: false,
+
+                        static: "#datetime-5-holder",   /* Used for demonstration */
+                        classNames: "theme-default",    /* Used for demonstration */
+                        startOpen: true,                /* Used for demonstration */
+                        stayOpen: true,                 /* Used for demonstration */
+                    });
+                    tail.DateTime("#datetime-6", {
+                        dateFormat: false,
+
+                        static: "#datetime-6-holder",   /* Used for demonstration */
+                        classNames: "theme-white",      /* Used for demonstration */
+                        startOpen: true,                /* Used for demonstration */
+                        stayOpen: true,                 /* Used for demonstration */
+                    });
+
+                    // Date Demonstration
+                    tail.DateTime("#datetime-7", {
+                        timeFormat: false,
+
+                        static: "#datetime-7-holder",   /* Used for demonstration */
+                        classNames: "theme-default",    /* Used for demonstration */
+                        startOpen: true,                /* Used for demonstration */
+                        stayOpen: true,                 /* Used for demonstration */
+                    });
+                    tail.DateTime("#datetime-8", {
+                        timeFormat: false,
+
+                        static: "#datetime-8-holder",   /* Used for demonstration */
+                        classNames: "theme-white",      /* Used for demonstration */
+                        startOpen: true,                /* Used for demonstration */
+                        stayOpen: true,                 /* Used for demonstration */
+                    });
+
+                    // Format Demonstration
+                    tail.DateTime("#datetime-9", {
+                        dateFormat: "M. dd, YYYY -",
+
+                        static: "#datetime-9-holder",   /* Used for demonstration */
+                        classNames: "theme-default",    /* Used for demonstration */
+                        startOpen: true,                /* Used for demonstration */
+                        stayOpen: true,                 /* Used for demonstration */
+                    });
+                    tail.DateTime("#datetime-10", {
+                        dateFormat: "(D) dd. F YYYY -",
+
+                        static: "#datetime-10-holder",   /* Used for demonstration */
+                        classNames: "theme-white",      /* Used for demonstration */
+                        startOpen: true,                /* Used for demonstration */
+                        stayOpen: true,                 /* Used for demonstration */
+                    });
+
+                    // Position
+                    tail.DateTime("#datetime-11", {
+                        position: "bottom"
+                    });
+                    tail.DateTime("#datetime-12", {
+                        position: "left"
+                    });
+                    tail.DateTime("#datetime-13", {
+                        position: "right"
+                    });
+                    tail.DateTime("#datetime-14", {
+                        position: "top"
+                    });
+                });
+            </script>
+        </div>
+    </body>
+</html>
