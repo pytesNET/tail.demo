@@ -1,0 +1,198 @@
+/*
+ |  fur.demo    The default demonstration website for all tail projects @ pytesNET.
+ |  @file       ./css/fur.demo-invert.css
+ |  @author     SamBrishes <sam@pytes.net>
+ |  @version    3.0.0 - Beta
+ |
+ |  @website    https://github.com/pytesNET/fur.demo
+ |  @license    X11 / MIT License
+ |  @copyright  Copyright © 2016 - 2019 SamBrishes, pytesNET <info@pytes.net>
+ */
+
+/* @start INVERT GENERAL */
+html.invert, .invert body, body.invert{
+    color: rgba(255, 255, 255, 0.75);
+    background-color: #101418;
+}
+.invert a:hover, a.invert:hover{
+    color: rgba(255, 255, 255, 1);
+}
+code.invert,
+code.invert.pinkred{
+    color: #ffffff;
+    background-color: rgb(210, 15, 95);
+}
+code.invert.less{
+    color: #f0f0f0;
+    background: #2d2d2d;
+}
+code.invert.grey{
+    color: #ffffff;
+    background-color: rgb(160, 164, 168);
+}
+code.invert.red{
+    color: #ffffff;
+    background-color: rgb(205, 40, 60);
+}
+code.invert.orange{
+    color: #ffffff;
+    background-color: rgb(230, 125, 30);
+}
+code.invert.green{
+    color: #ffffff;
+    background-color: rgb(50, 185, 60);
+}
+code.invert.blue{
+    color: #ffffff;
+    background-color: rgb(20, 155, 230);
+}
+.invert kbd, kbd.invert{
+    color: rgba(255, 255, 255, 0.75);
+    border-color: #404448;
+    background-color: #303438;
+    box-shadow: 0 1px 1px #000408;
+    -moz-box-shadow: 0 1px 1px #000408;
+    -webkit-box-shadow: 0 1px 1px #000408;
+}
+.invert blockquote, .invert blockquote,
+.invert address, .invert address{
+	color: rgba(255, 255, 255, 0.8);
+    background-color: #303438;
+}
+.invert blockquote cite, blockquote.invert cite{
+	color: rgba(255, 255, 255, 0.5);
+}
+.invert table tbody tr > *, table.invert tbody tr > *{
+    background-color: #101418;
+    border-top-color: rgba(255, 255, 255, 0.2);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+.invert table tbody tr > *:first-child,
+table.invert tbody tr > *:first-child{
+    border-left-color: rgba(255, 255, 255, 0.2);
+}
+.invert table tbody tr > *:last-child,
+table.invert tbody tr > *:last-child{
+    border-right-color: rgba(255, 255, 255, 0.2);
+}
+
+/* FORM */
+.invert input, input.invert,
+.invert select, select.invert,
+.invert textarea, textarea.invert{
+    color: rgba(255, 255, 255, 0.75);
+    border-color: #404448;
+    background-color: #303438;
+    box-shadow: 0 1px 1px #000408;
+    -moz-box-shadow: 0 1px 1px #000408;
+    -webkit-box-shadow: 0 1px 1px #000408;
+}
+.invert input:hover, input.invert:hover, .invert input.hover, input.invert.hover,
+.invert select:hover, select.invert:hover, .invert select.hover, select.invert.hover,
+.invert textarea:hover, textarea.invert:hover, .invert textarea.hover, textarea.invert.hover{
+    border-color: #707478;
+}
+.invert input:focus, input.invert:focus, .invert input.focus, input.invert.focus,
+.invert select:focus, select.invert:focus, .invert select.focus, select.invert.focus,
+.invert textarea:focus, textarea.invert:focus, .invert textarea.focus, textarea.invert.focus{
+    border-color: #DC4650;
+}
+.invert input[type="radio"].input-radio + label:before,
+input[type="radio"].invert.input-radio + label:before,
+.invert input[type="checkbox"].input-checkbox + label:before,
+input[type="checkbox"].invert.input-checkbox + label:before{
+    border-color: rgba(255, 255, 255, 0.3);
+}
+.invert input[type="radio"].input-radio + label:hover:before,
+input[type="radio"].invert.input-radio + label:hover:before,
+.invert input[type="checkbox"].input-checkbox + label:hover:before,
+input[type="checkbox"].invert.input-checkbox + label:hover:before{
+    border-color: rgba(255, 255, 255, 0.4);
+}
+.invert input[type="radio"].input-radio:disabled + label:before,
+input[type="radio"].invert.input-radio:disabled + label:before,
+.invert input[type="checkbox"].input-checkbox:disabled + label:before,
+input[type="checkbox"].invert.input-checkbox:disabled + label:before{
+    border-color: #505458;
+    background-color: #404448;
+}
+.invert input[type="radio"].input-radio:disabled:checked + label:before,
+input[type="radio"].invert.input-radio:disabled:checked + label:before,
+.invert input[type="checkbox"].input-checkbox:disabled:checked + label:before,
+input[type="checkbox"].invert.input-checkbox:disabled:checked + label:before{
+    border-color: #505458;
+    background-color: transparent;
+}
+/* @end INVERT GENERAL */
+
+/* @start INVERT COMPONENTS */
+.invert .toolbar{
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    background-color: #101418;
+}
+.invert .demo-content{
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #202428;
+}
+.invert .demo-content.separate{
+    border-bottom-color: #000408;
+}
+.invert .demo-content.bordered{
+    border-top-color: #000408;
+    border-bottom-color: #000408;
+}
+.invert .demo-content .side-by-side.separated > aside{
+    border-right-color: rgba(255, 255, 255, 0.2);
+}
+.invert .demo-content header.separated{
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+.invert .demo-content header.separatedd{
+    border-right-color: rgba(255, 255, 255, 0.2);
+}
+.invert .demo-content header h1{
+    color: rgba(255, 255, 255, 0.75);
+}
+.invert .demo-content header h1 b{
+    color: rgba(255, 255, 255, 1);
+}
+.invert .demo-content header p{
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #323436;
+}
+.invert .demo-content article.separated{
+    border-top-color: rgba(255, 255, 255, 0.2);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+.invert .demo-content article.bordered{
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.invert .demo-content article.bordered{
+    background-color: #101418;
+}
+.invert .demo-content article.side-by-side.bordered > aside:first-child{
+    border-right-color: rgba(255, 255, 255, 0.2);
+}
+.invert .demo-content article h1{
+    color: rgba(255, 255, 255, 0.9);
+}
+/* @end INVERT COMPONENTS */
+
+/* @start INVERT ELEMENTS */
+.invert .tooltip{
+   color: #202428;
+   background-color: #ffffff;
+}
+.invert .tooltip:before{
+   border-bottom-color: #ffffff;
+}
+.invert .footer{
+	color: #707478;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+	background-color: #101418;
+}
+
+.invert .footer a{
+	color: #909498;
+}
+/* @end INVERT ELEMENTS */

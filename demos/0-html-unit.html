@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="content-language" content="en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>fur.demo - The default demonstration page for tail.&lt;projects&gt;</title>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png?v=2.0.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png?v=2.0.0" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png?v=2.0.0" />
+        <link rel="manifest" href="../assets/images/site.webmanifest?v=2.0.0" />
+        <link rel="mask-icon" href="../assets/images/safari-pinned-tab.svg?v=2.0.0" color="#d20f5f" />
+        <link rel="shortcut icon" href="../assets/images/favicon.ico?v=2.0.0" />
+        <meta name="msapplication-TileColor" content="#d20f5f" />
+        <meta name="msapplication-config" content="../assets/images/browserconfig.xml?v=2.0.0" />
+        <meta name="theme-color" content="#d20f5f" />
+
+        <!-- Common -->
+        <meta name="author" content="SamBrishes, pytesNET" />
+        <meta name="publisher" content="SamBrishes, pytesNET" />
+        <meta name="copyright" content="SamBrishes, pytesNET" />
+
+        <meta name="name" content="fur.demo - The default demonstration page for tail.projects" />
+        <meta name="description" content="This repository is just the default demonstration page for all tail projects developed by pytesNET." />
+        <meta name="keywords" content="Demonstration, Page, pytesNET" />
+
+        <meta itemprop="name" content="fur.demo - The default demonstration page for tail.projects" />
+        <meta itemprop="description" content="This repository is just the default demonstration page for all tail projects developed by pytesNET." />
+        <meta itemprop="keywords" content="Demonstration, Page, pytesNET" />
+
+        <!-- Dublin Core -->
+        <meta name="DC.Language" content="en" />
+        <meta name="DC.Creator" content="SamBrishes, pytesNET" />
+        <meta name="DC.Publisher" content="SamBrishes, pytesNET" />
+        <meta name="DC.Rights" content="SamBrishes, pytesNET" />
+        <meta name="DC.Description" content="This repository is just the default demonstration page for all tail projects developed by pytesNET." />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="pytesNET" />
+        <meta name="twitter:creator" content="pytesNET" />
+        <meta name="twitter:title" content="fur.demo - The default demonstration page for tail.projects" />
+        <meta name="twitter:description" content="This repository is just the default demonstration page for all tail projects developed by pytesNET." />
+
+        <!-- Open Graph -->
+        <meta name="og:type" content="website" />
+        <meta name="og:url" content="http://pytesNET.github.io/fur.demo" />
+        <meta name="og:locale" content="en" />
+        <meta name="og:title" content="fur.demo - The default demonstration page for tail.projects" />
+        <meta name="og:site_name" content="fur.demo - The default demonstration page for tail.projects" />
+        <meta name="og:description" content="This repository is just the default demonstration page for all tail projects developed by pytesNET." />
+
+        <!-- Assets -->
+        <link type="text/css" rel="stylesheet" href="../assets/css/octicons.css?ver=8.1.0" />
+        <link type="text/css" rel="stylesheet" href="../assets/css/fur.demo-general.css?ver=3.0.0" />
+        <link type="text/css" rel="stylesheet" href="../assets/css/fur.demo-design.css?ver=3.0.0" />
+        <link type="text/css" rel="stylesheet" href="../assets/css/fur.demo-elements.css?ver=3.0.0" />
+        <link type="text/css" rel="stylesheet" href="../assets/css/fur.demo-responsive.css?ver=3.0.0" />
+        <link type="text/css" rel="stylesheet" href="../assets/css/fur.demo-invert.css?ver=3.0.0" />
+        <link type="text/css" rel="stylesheet" href="../assets/css/fur.demo-custom.css?ver=3.0.0" />
+        <script type="text/javascript" src="../assets/js/menuspy.min.js?ver=1.15.0"></script>
+        <script type="text/javascript" src="../assets/js/prism.min.js?ver=1.15.0"></script>
+        <script type="text/javascript" src="../assets/js/fur.demo.js?ver=3.0.0"></script>
+
+        <!-- Source -->
+        <!--<link type="text/css" rel="stylesheet" href="../source/css/tail.file.css?ver=0.x.x" />-->
+        <!--<script type="text/javascript" src="../source/js/tail.file.js?ver=0.x.x"></script>-->
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="container-left">
+                    <a href="https://pytesnet.github.io/fur.demo" class="tail">
+                        <div class="tail-logo">
+                            <div class="tail-logo-circle"></div>
+                        </div>
+                        <div class="tail-project">
+                            <span class="tail-title">fur.<b>demo</b></span>
+                            <span class="tail-version">3.0.0 - <b>Stable</b></span>
+                        </div>
+                    </a>
+                    <div class="tail-dropdown">
+                        <div class="tail-dropdown-button">More<span>tail.projects</span></div>
+                        <div class="tail-dropdown-inner">
+                            <ul class="projects">
+                                <li class="item"><a href="https://github.pytes.net/tail.select">
+                                    <span class="item-title">tail.<b>select</b></span>
+                                    <span class="item-description">Make Select Fields beautiful again</span>
+                                </a></li>
+
+                                <li class="item"><a href="https://github.pytes.net/tail.writer">
+                                    <span class="item-title">tail.<b>writer</b></span>
+                                    <span class="item-description">Turn Textareas into Markdown Editors</span>
+                                </a></li>
+
+                                <li class="item"><a href="https://github.pytes.net/tail.DateTime">
+                                    <span class="item-title">tail.<b>DateTime</b></span>
+                                    <span class="item-description">Show a beautiful Date/Time Picker</span>
+                                </a></li>
+
+                                <li class="item"><a href="https://github.pytes.net/tail.BBSolid">
+                                    <span class="item-title">tail.<b>BBSolid</b></span>
+                                    <span class="item-description">Parse BBCode in valid HTML 5</span>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-right text-right">
+                    <ul class="main-navi">
+                        <li class="navi-item has-submenu active">
+                            <a href="../index.html">Demo</a>
+                            <ul class="sub-navi">
+                                <li class="navi-item"><a href="./0-html-unit.html">HTML / CSS Unit</a></li>
+                                <li class="navi-item"><a href="./1-web-elements.html">Web Elements</a></li>
+                                <li class="navi-item"><a href="./2-page-components.html">Page Components</a></li>
+                                <li class="navi-item"><a href="./3-javascript-methods.html">JavaScript Methods</a></li>
+                            </ul>
+                        </li>
+                        <li class="navi-item item-internal"><a href="./docs.html">Docs</a></li>
+
+                        <li class="navi-item item-github hover">
+                            <a href="https://github.com/pytesNET/fur.demo/tarball/master">.TAR</a>
+                            <a href="https://www.github.com/pytesNET/fur.demo"><span class="octicon octicon-mark-github"></span></a>
+                            <a href="https://www.twitter.com/pytesNET" target="_blank"><span class="twitter"></span></a>
+                            <a href="https://github.com/pytesNET/fur.demo/zipball/master">.ZIP</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="toolbar">
+            <div class="container">
+                <div class="container-left test-left">
+                    <span class="label label-secondary label-outline toolbar-title">Written in</span>
+                    <ul class="languages">
+                        <li><span class="label label-less" data-tooltip="LESS">LESS</span></li>
+                        <li><span class="label label-css" data-tooltip="CSS">CSS</span></li>
+                        <li><span class="label label-javascript" data-tooltip="Vanilla JavaScript">JavaScript</span></li>
+                        <li><span class="label label-typescript" data-tooltip="TypeScript">TypeScript</span></li>
+                        <li><span class="label label-coffeescript" data-tooltip="CoffeeScript">CoffeeScript</span></li>
+                        <li><span class="label label-python" data-tooltip="Python 3">Python</span></li>
+                        <li><span class="label label-php" data-tooltip="PHP 5 / 7">PHP</span></li>
+                    </ul>
+                </div>
+                <div class="container-right text-right">
+                    <ul class="browsers">
+                        <li class="browser-firefox" data-tooltip="Mozilla Firefox"></li>
+                        <li class="browser-chrome" data-tooltip="Google Chrome"></li>
+                        <li class="browser-opera" data-tooltip="Opera"></li>
+                        <li class="browser-safari" data-tooltip="Apple Safari"></li>
+                        <li class="browser-edge" data-tooltip="Microsoft Edge"></li>
+                        <li class="browser-ie" data-tooltip="Internet Explorer"></li>
+                    </ul>
+                    <span class="label label-secondary label-outline toolbar-title">Supported</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="actionbar">
+            <div class="container">
+                <div class="actionbar-inner split">
+                    <div class="text-left">
+                        <div class="action-select">
+                            <div class="select-icon"><span class="octicon octicon-paintcan"></span></div>
+                            <select id="change-design">
+                                <option value="default">Design: Default White</option>
+                                <option value="harx">Design: Invert Black</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="action-select">
+                            <div class="select-icon"><span class="octicon octicon-book"></span></div>
+                            <select id="change-locale">
+                                <option value="en">Language: English</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-layout">
+            <div class="container">
+                <main class="main-content">
+                    <h1 id="html-css-unit" class="underlined">HTML / CSS Unit Demonstration</h1>
+                    <p>
+                        The fur.demo project is designed as Desktop-First template, because the main usage of this is the demonstration and
+                        documentation of our tail projects. So its aimed to show programming based informations to programmer, who're using
+                        our <del>programs</del> scripts. And the most programmer are programming on a programmed desktop computer. Makes sense, or?
+                    </p>
+                    <p>
+                        However, this template is optimized for mobile devices too, of course. But it may contains some overlay bugs or other design-related
+                        issues on smaller screens, especially at the single project demonstration pages (which append / inject own styles) for itself.
+                        You can also report each issue on GitHub, but consider: This is still a internal project!
+                    </p>
+                    <p>
+                        You may think <q>Hmm... This page looks like the Bootstrap 3 Documentation Page.</q> and you probably are not completely
+                        wrong with that! But seriously, why should I put energy and effort into <b>a demonstration page</b> of an internal
+                        project! <b>fur.demo</b> isn't our next big CSS Framework, it is just a simple kept combination of CSS, HTML and
+                        JavaScript to show of our REAL projects.
+                    </p>
+                    <p>
+                        Before you ask: Nope, I don't know why I'm writing this. Nobody will ever read this (but if so, write us "Hello My Darkness &lt;3"
+                        via Twitter <a href="https://twitter.com/pytesNET" target="_blank">@pytesNET</a>) so ... Naaah.
+                    </p>
+
+                    <h2 id="headers" class="underline">Headers & Paragraphs</h2>
+                    <p>
+                        You can use the <code>.underlined</code> class on each header to underline the header as shown above, on the top of this page,
+                        and below in the example container. The main paragraph element can also adjusted with some additional class names as shown below.
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <h1 class="underlined">h1. Header #1</h1>
+                            <p class="text-left">
+                                The first header with an font-size of 34px. This Paragraph element is also using the class name <code>.text-left</code> to
+                                "left" the text inside. But you don't need a class for this, because this SHOULD be the default behavior by your browser.
+                                BUT if a main container appends a "text-align: &lt;other then left&gt;" property, you MAY need this to correct the text direction again!
+                            </p>
+
+                            <h2 class="underlined">h2. Header #2</h2>
+                            <p class="text-right">
+                                The second header with an font-size of 30px. This Paragraph element is also using the class name <code>.text-right</code> to
+                                "right" the text inside. This is MAYBY useful if you're using our GRID or TABLE or CONTAINER content division.
+                            </p>
+
+                            <h3 class="underlined">h3. Header #3</h3>
+                            <p class="text-center">
+                                The third header with an font-size of 26px. This Paragraph element is also using the class name <code>.text-center</code> to "center"
+                                the text inside. This CAN be really useful if you just want to "center" something!
+                            </p>
+
+                            <h4 class="underlined">h4. Header #4</h4>
+                            <p class="text-justify">
+                                The fourth header with an font-size of 22px. This Paragraph element is also using the class name <code>.text-justify</code> to "justify"
+                                the text inside. To show this off we need a bit more content, which extends over several lines. This is the perfect moment and place to
+                                tell you about my hatred of Microsoft's Internet Explorer. WHY is it so HARD to implement useful and powerful CSS and JavaScript standards
+                                within this browser? I mean IE is the DEFAULT (i mean pre-installed) browser on millions of computers, it is the REALLY-FIRST access to a place
+                                called <del>GeoCities</del> "Internet" and it does almost EVERYTHING wrong. It is REALLY laborious, annoying and (time-) expensive to optimize a
+                                script (or a complete website) for this stupid browser (never go deeper than IE 9)!
+                            </p>
+
+                            <h5 class="underlined">h5. Header #5</h5>
+                            <p class="important">
+                                The fifth header with an font-size of 18px. This Paragraph element is also using the class name <code>.important</code> which increase the
+                                font-size to 19px (with an line-height of 1.75). All elements inside (as shown on the &lt;code&gt; element) will also be adjusted
+                            </p>
+
+                            <h6 class="underlined">h6. Header #6</h6>
+                            <p class="description">
+                                The sixth header with an font-size of 14px. This Paragraph element is also using the class name <code>.description</code> which reduce the
+                                font-size to 13px (with an line-height of 1.5). All elements inside (as shown on the &lt;code&gt; element) will also be adjusted
+                            </p>
+                        </div>
+
+<pre class="line-numbers lang-html"><code>&lt;h1 class="underlined"&gt;h1. Header #1&lt;/h1&gt;
+&lt;p class="text-left"&gt;&lt;!-- [...] --&gt;&lt;/p&gt;
+
+&lt;h2 class="underlined"&gt;h2. Header #2&lt;/h2&gt;
+&lt;p class="text-right"&gt;&lt;!-- [...] --&gt;&lt;/p&gt;
+
+&lt;h3 class="underlined"&gt;h3. Header #3&lt;/h3&gt;
+&lt;p class="text-center"&gt;&lt;!-- [...] --&gt;&lt;/p&gt;
+
+&lt;h4 class="underlined"&gt;h4. Header #4&lt;/h4&gt;
+&lt;p class="text-justify"&gt;&lt;!-- [...] --&gt;&lt;/p&gt;
+
+&lt;h5 class="underlined"&gt;h5. Header #5&lt;/h5&gt;
+&lt;p class="important"&gt;&lt;!-- [...] --&gt;&lt;/p&gt;
+
+&lt;h6 class="underlined"&gt;h6. Header #6&lt;/h6&gt;
+&lt;p class="description"&gt;&lt;!-- [...] --&gt;&lt;/p&gt;
+</code></pre>
+                    </div>
+
+                    <h2 id="inline-elements" class="underline">Inline Text-Elements</h2>
+                    <p>
+                        There are many useful tags besides <b>bold</b>, <strong>strong</strong>, <i>italic</i>, <em>emphasized</em>,
+                        <u>underlined</u>, <ins>inserted</ins>, <del>deleted</del> and <s>strikethroughed</s> of which you should have
+                        heard at least. And i don't mean <small>small</small>, <big>big</big>, <sub>subscriped</sub>, <sup>superscripted</sup>
+                        or <a href="">linked</a> text of course! I will show you this awesome ones, for the rest check out the comprehensive
+                        <a href="https://www.w3schools.com/tags/default.asp">HTML Reference</a> on w3schools.com!
+                    </p>
+
+                    <h3 id="mark">Marked Text</h3>
+                    <p>
+                        You can easily <mark>mark</mark> any text you want.
+
+                        You can <mark>mark</mark> text also in different colors by using the respective class names: <mark class="grey">grey</mark>,
+                        <mark class="red">red</mark>, <mark class="orange">orange</mark>, <mark class="green">green</mark> and <mark class="blue">blue</mark>.
+                        The mark element gets rounded, when you are adding the class name <mark class="rounded">rounded</mark>.
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <p>
+                                You can easily <mark>mark</mark> any text you want.
+                            </p>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;p&gt;You can easily &lt;mark&gt;mark&lt;/mark&gt; any text you want.&lt;/p&gt;</code></pre>
+                    </div>
+
+                    <h3 id="q">Inline Quotation</h3>
+                    <p>
+                        Skip blockquote elements and add short quotations directly in your text using &lt;q&gt;!
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <p>
+                                Some <q>Inline Quotations</q> can be so easy!
+                            </p>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;p&gt;Some &lt;q&gt;Inline Quotations&lt;/q&gt; can be so easy!&lt;/p&gt;</code></pre>
+                    </div>
+
+                    <h3 id="abbr">Abbreviation, Acronym & Definitions</h3>
+                    <p>
+                        Show off some really cool (or unknown) Abbreviations or Definitions using &lt;abbr&gt;, &lt;dfn&gt; or the
+                        "deprecated" &lt;acronym&gt;, which isn't supported in HTML 5 anymore and should be avoided!
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <p>
+                                Move your Mouse Pointer over the following element to "read" the Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr>.
+                            </p>
+                            <p>
+                                Move your Mouse Pointer over the following element to "read" the Definition: <dfn title="Cascading StyleSheet">CSS</dfn>.
+                            </p>
+                            <p>
+                                Move your Mouse Pointer over the following element to "read" the Acronym: <acronym title="JavaScript">JS</acronym>.
+                            </p>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;!-- [...] --&gt; &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;.
+&lt;!-- [...] --&gt; &lt;dfn title="Cascading StyleSheet"&gt;CSS&lt;/dfn&gt;.
+&lt;!-- [...] --&gt; &lt;acronym title="JavaScript"&gt;JS&lt;/acronym&gt;.
+</code></pre>
+                    </div>
+
+                    <h3 id="code">Code Fragment</h3>
+                    <p>
+                        Show off some neat source code snippets within your text using &lt;code&gt;. You can also show your code
+                        in different colors using the class names <code class="grey">grey</code>, <code class="red">red</code>,
+                        <code class="orange">orange</code>, <code class="green">green</code>, <code class="blue">blue</code> or
+                        <code class="less">less</code>, the default is <code class="pinkred">pinkred</code>. Use the additional
+                        class name <code class="invert">invert</code> to show your code snippets like: <code class="grey invert">grey</code>,
+                        <code class="red invert">red</code>, <code class="orange invert">orange</code>, <code class="green invert">green</code>,
+                        <code class="blue invert">blue</code> or <code class="less invert">less</code>.
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <p>
+                                You can easily add <code>inline code</code> into any text you want.
+                            </p>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;p&gt;You can easily add &lt;code&gt;inline code&lt;/code&gt; into any text you want.&lt;/p&gt;</code></pre>
+                    </div>
+
+                    <h3 id="keyboard">Keyboard Input</h3>
+                    <p>
+                        Sometimes you stare at your expensive Starbucks Coffee and think about the important things in life: Like the
+                        <q>Answer to the Ultimate Question of Life, the Universe and Everything</q> or just how to show Keyboard Inputs on
+                        your website. To the last question: &lt;kbd&gt; is your friend, the answer of the first question is <kbd>4</kbd> <kbd>2</kbd>!
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <p>Just press <kbd>ALT</kbd> + <kbd>F4</kbd> to open the hacking tool in your browser.</p>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;p&gt;Just press &lt;kbd&gt;ALT&lt;/kbd&gt; + &lt;kbd&gt;F4&lt;/kbd&gt; to close your complete browser.&lt;/p&gt;</code></pre>
+                    </div>
+
+                    <h3 id="sample">Sample Output</h3>
+                    <p>
+                        Sometimes you stare at your GNU/LINUX terminal and think about the important things in life: How to show the
+                        terminal output in HTML and how do you write Zat'nik'tel right? Using &lt;samp&gt; will may save your day,
+                        and just call it <samp>Zat</samp>!
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <p>Too many files on your HDD? Just use <samp>rm -rf /</samp> and be happy!</p>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;p&gt;Still GNU/Linux on your HDD? Just use &lt;samp&gt;rm -rf /&lt;/samp&gt; and be happy!&lt;/p&gt;</code></pre>
+                    </div>
+
+                    <h3 id="teletype">Teletype Text</h3>
+                    <p>
+                        Sometimes... Okay, sorry. The &lt;tt&gt; is "the old" way to define something between a inline code snippet,
+                        a variable and a keyboard input. BUT this HTML tag has been marked as deprecated in HTML 5, and MAY should be
+                        avoided. That is the reason why it looks the same as &lt;samp&gt;.
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <p>Want to remove a virus on your computer? Just use <tt>format C:\</tt> and be happy!</p>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;p&gt;Want to remove everything on your computer? Just use &lt;tt&gt;format C:\&lt;/tt&gt; and be happy!&lt;/p&gt;</code></pre>
+                    </div>
+
+                    <h3 id="variable">Variable</h3>
+                    <p>
+                        Using &lt;var&gt; will tag (or should at least show) the text inside as "variable", you can use some additional
+                        class names (as shown below) to add respective "language depending statements" in front of the variable. That
+                        doesn't makes any sense but looks nice. You can also use different colors: <var class="grey">grey</var>,
+                        <var class="red">red</var>, <var class="orange">orange</var>, <var class="green">green</var> or
+                        <var class="blue">blue</var>.
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <p>Showing a <var>default</var>, a <var class="css">CSS</var>,  <var class="less">LESS</var>,  a <var class="php">PHP</var>, a <var class="js">JavaScript</var> or a <var class="es">ECMAScript</var> Variable.</p>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;var&gt;default&lt;/var&gt; &lt;!-- [...] --&gt;
+&lt;var class="css"&gt;CSS&lt;/var&gt; &lt;!-- [...] --&gt;
+&lt;var class="less"&gt;LESS&lt;/var&gt; &lt;!-- [...] --&gt;
+&lt;var class="php"&gt;PHP&lt;/var&gt; &lt;!-- [...] --&gt;
+&lt;var class="js"&gt;JavaScript&lt;/var&gt; &lt;!-- [...] --&gt;
+&lt;var class="es"&gt;ECMAScript&lt;/var&gt;
+</code></pre>
+                    </div>
+
+
+                    <h2 id="block-elements" class="underline">Block Text-Elements</h2>
+                    <p>
+                        Just "Inline Elements" are not enough to build up useful and readable pages, therefore the HTML God - also called W3C -
+                        gave us the present of block HTML elements. Use it responsible and with the Power of grayskull, because the following
+                        elements are intended for special cases only. I mean, you can't use a &lt;table&gt; to quote another Line dropped by
+                        Linus Torvald!
+                    </p>
+
+                    <h3 id="blockquote">Blockquote & Cite</h3>
+                    <p>
+                        Wanna quote someone, or something? <code>&lt;blockquote&gt;</code> is your friend, using <code>&lt;cite&gt;</code> and
+                        Paragraphs makes it complete as well! Blockquotes are using, compared to inline quotes, a serif font family. The default
+                        is set to Georgia, Times New Roman, Times and the system own serif as last fallback.
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <blockquote>
+                                I am Batman!
+                            </blockquote>
+
+                            <blockquote>
+                                <p>I am Batman!</p>
+                                <cite>Bruce Wayne</cite>
+                            </blockquote>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;blockquote&gt;
+    I am Batman!
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+    &lt;p&gt;I am Batman!&lt;/p&gt;
+    &lt;cite&gt;Bruce Wayne&lt;cite&gt;
+&lt;/blockquote&gt;</code></pre>
+                    </div>
+
+                    <h3 id="address">Address</h3>
+                    <p>
+                        This is the cool way to show some addresses on your website. You don't need line breaks, you don't need Paragraphs,
+                        just write down the address line-per-line as you do it on an Envelope. Envelope? You know, the old way to send eMails,
+                        just without the e and using dead trees (called "Paper" or in this case "Letter").
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <address>
+                                Detective
+                                Sherlock Holmes
+                                221B Baker Street
+                                Marylebone
+                                London NW1 6XE
+                            </address>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;address&gt;
+    Detective
+    Sherlock Holmes
+    221B Baker Street
+    Marylebone
+    London NW1 6XE
+&lt;/address&gt;</code></pre>
+                    </div>
+
+                    <h3 id="source">Source Code</h3>
+                    <p>
+                        The fur.demo demonstration template is equipped with the PRISM.js Syntax Highlighting library, but you can also use
+                        the pre element without it. Please use the correct, recommended syntax when showing off code which is a construct of
+                        an &lt;code&gt; element within the &lt;pre&gt; tags!
+                    </p>
+                    <p>
+                        The PRISM.js package has the following configuration (<a href="https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+coffeescript+css-extras+markup-templating+markdown+php+php-extras+sql+scss+python+typescript+textile+sass&plugins=line-numbers+keep-markup" target="_blank">View on prismjs.com</a>):
+                    </p>
+                    <ul>
+                        <li><b>Language:</b> C-like</li>
+                        <li><b>Language:</b> Markup (HTML, XML, SVG, MathML)</li>
+                        <li><b>Language:</b> Markup Templating (+ Markdown, Textile)</li>
+                        <li><b>Language:</b> CSS (+ Extras, LESS, SASS, SCSS)</li>
+                        <li><b>Language:</b> JavaScript (+ CoffeeScript, TypeScrpt)</li>
+                        <li><b>Language:</b> PHP (+ Extras)</li>
+                        <li><b>Language:</b> Python</li>
+                        <li><b>Plugin:</b> Line Numbers</li>
+                        <li><b>Plugin:</b> Keep Markup</li>
+                    </ul>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <pre>This is just a &lt;pre&gt; tag</pre>
+                            <pre><code>Now you have a &lt;code&gt; tag inside a &lt;pre&gt; element, which is the recommended way to show code!</code></pre>
+<pre class="lang-markup line-numbers"><code>This &lt;pre&gt; &gt; &lt;code&gt; construct uses the PRISM.js library power!
+It also enables the line numbers, using the class name <mark>line-numbers</mark> (&lt;-- Keep Markup)</code></pre>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;pre&gt;&lt;!-- --&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&lt;!-- --&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="lang-markup line-numbers"&gt;&lt;code&gt;&lt;!-- --&gt; &lt;mark&gt;&lt;!-- --&gt;&lt;/mark&gt;&lt;!-- --&gt;&lt;/code&gt;&lt;/pre&gt;</code></pre>
+                    </div>
+
+                    <h3 id="hr">Horizontal Ruler</h3>
+                    <p>
+                        Use Horizontal Rulers to separate your content with style. The default separating margin is set to 30px, but you can use
+                        the additional class name <code>separator</code> to increase the default margin size to 50px, <code>separator-chief</code>
+                        for 75px and <code>separator-final</code> for 100px. You can also colorize the "line" using the class names
+                        <code class="grey">grey</code>, <code class="red">red</code>, <code class="orange">orange</code>, <code class="green">green</code>,
+                        <code class="blue">blue</code> or  <code class="pinkred">pinkred</code>!
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <hr class="separator" />
+                            <hr class="separator grey" />
+                            <hr class="separator pinkred" />
+                            <hr class="separator red" />
+                            <hr class="separator orange" />
+                            <hr class="separator green" />
+                            <hr class="separator blue" />
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;hr class="separator" /&gt;
+&lt;hr class="separator grey" /&gt;
+&lt;hr class="separator pinkred" /&gt;
+&lt;hr class="separator red" /&gt;
+&lt;hr class="separator orange" /&gt;
+&lt;hr class="separator green" /&gt;
+&lt;hr class="separator blue" /&gt;</code></pre>
+                    </div>
+
+                    <h3 id="lists">UL/OL Lists</h3>
+                    <p>
+                        Lists are nessesary to... lists some informations and data. Below you will find a list with all of our
+                        projects, wrapped in UL lists and using some special class names (at least on the second list)!
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <ul>
+                                <li>tail.Scripts
+                                    <ul>
+                                        <li>JavaScript
+                                            <ol>
+                                                <li>tail.select</li>
+                                                <li>tail.DateTime</li>
+                                                <li>tail.writer</li>
+                                                <li>tail.BBSolid</li>
+                                            </ol>
+                                        </li>
+                                        <li>PHP
+                                            <ol>
+                                                <li>tail/Gettext</li>
+                                            </ol>
+                                        </li>
+                                        <li>Python3
+                                            <ol>
+                                                <li>LiTE - <b>L</b>ight <b>i</b>mproves the <b>T</b>kinter <b>E</b>nvironment</li>
+                                            </ol>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>paw.Plugins</li>
+                                <li>fur.Themes</li>
+                                <li>snout.Tools
+                                    <ol>
+                                        <li>Synder.Toolkit</li>
+                                        <li>LESS.Compiler</li>
+                                    </ol>
+                                </li>
+                                <li>other.Projects</li>
+                            </ul>
+
+                            <hr />
+
+                            <ul>
+                                <li>tail.Scripts
+                                    <ul class="none title">
+                                        <li>JavaScript
+                                            <ol>
+                                                <li>tail.select</li>
+                                                <li>tail.DateTime</li>
+                                                <li>tail.writer</li>
+                                                <li>tail.BBSolid</li>
+                                            </ol>
+                                        </li>
+                                        <li>PHP
+                                            <ol>
+                                                <li>tail/Gettext</li>
+                                            </ol>
+                                        </li>
+                                        <li>Python3
+                                            <ol>
+                                                <li>LiTE - <b>L</b>ight <b>i</b>mproves the <b>T</b>kinter <b>E</b>nvironment</li>
+                                            </ol>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>paw.Plugins</li>
+                                <li>fur.Themes</li>
+                                <li>snout.Tools
+                                    <ol>
+                                        <li>Synder.Toolkit</li>
+                                        <li>LESS.Compiler</li>
+                                    </ol>
+                                </li>
+                                <li>other.Projects</li>
+                            </ul>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;ul&gt;
+    &lt;li&gt;&lt;!-- Content --&gt;&lt;/li&gt;
+    &lt;li&gt;
+        &lt;!-- Content --&gt;
+        &lt;ul class="none title"&gt;
+            &lt;li&gt;&lt;!-- Content --&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;ol&gt;
+            &lt;li&gt;&lt;!-- Content --&gt;&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                    </div>
+
+                    <h3 id="dl">Description Lists</h3>
+                    <p>
+                        Description Lists are really useful to show and explain something in a cool and hip way. The default version will show the
+                        title above the description, like it should be. But you can also show it side - by - side, using the additional class name
+                        <code>aside</code>.
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <dl>
+                                <dt>LESS</dt>
+                                <dd>
+                                    Our main Pre-Processing Stylesheet language, which we are using on our projects, is <b>LESS</b>. It is really
+                                    handy, when using the <code>less.js</code> Pre-Processing script and the relationshop value "stylesheet/less".
+                                </dd>
+
+                                <dt>SASS / SCSS</dt>
+                                <dd>
+                                    SASS, or the new <b>SCSS</b>-called Syntax introduced in version 3, is another Pre-Processing Stylesheet language.
+                                    We tried it once on our tail.select script, have found it good, and switched to LESS.
+                                </dd>
+                            </dl>
+
+                            <hr />
+
+                            <dl class="aside">
+                                <dt>LESS</dt>
+                                <dd>
+                                    Our main Pre-Processing Stylesheet language, which we are using on our projects, is <b>LESS</b>. It is really
+                                    handy, when using the <code>less.js</code> Pre-Processing script and the relationshop value "stylesheet/less".
+                                </dd>
+
+                                <dt>SASS / SCSS</dt>
+                                <dd>
+                                    SASS, or the new <b>SCSS</b>-called Syntax introduced in version 3, is another Pre-Processing Stylesheet language.
+                                    We tried it once on our tail.select script, have found it good, and switched to LESS.
+                                </dd>
+                            </dl>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;dl&gt;
+    &lt;dt&gt;&lt;!-- Title --&gt;&lt;/dt&gt;
+    &lt;dd&gt;&lt;!-- Description --&gt;&lt;/dd&gt;
+
+    &lt;dt&gt;&lt;!-- Title --&gt;&lt;/dt&gt;
+    &lt;dd&gt;&lt;!-- Description --&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;dl class="aside"&gt;
+    &lt;dt&gt;&lt;!-- Title --&gt;&lt;/dt&gt;
+    &lt;dd&gt;&lt;!-- Description --&gt;&lt;/dd&gt;
+
+    &lt;dt&gt;&lt;!-- Title --&gt;&lt;/dt&gt;
+    &lt;dd&gt;&lt;!-- Description --&gt;&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                    </div>
+
+                    <h3 id="tables">Tables</h3>
+                    <p>
+                        There were times where tables and frames has been used to build up the basic "construct" and "structure" of the COMPLETE own website.
+                        Fortunately, these times are long gone and tables got back their original function: Show some magic data in a table-aided order!
+                        The table below shows a really basic example.
+                    </p>
+                    <p>
+                        Our tables has an "separated" style, but without any spacing and an adapted border to simulate a collapsed styling. We are using this kind
+                        of tables to allow the <code>empty-cells: "hide"</code> property, using the class name <code>empty</code> on the main table. You can
+                        also use the additional class name <code>straight</code> to hide the borders between the cells or <code>plain</code> to hide all borders!
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <table>
+                                <tr>
+                                    <th>TH #1</th>
+                                    <td>TD #2</td>
+                                    <td>TD #3</td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2">TH #1</th>
+                                    <td colspan="2">TD #2</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">TD #3</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">TD #1</td>
+                                </tr>
+                            </table>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;&lt;!-- Content --&gt;&lt;/th&gt;
+        &lt;td&gt;&lt;!-- Content --&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                    </div>
+
+                    <h4 id="tables-1">Header and Footer</h4>
+                    <p>
+                        Tables can be splittet into 3 different sections: Header, Body and Footer. The first and last provides a better overview for the
+                        body container, which contains the complete data structure. You can also colorize the color of the header using the class names
+                        <code class="grey">grey</code>, <code class="red">red</code>, <code class="orange">orange</code>, <code class="green">green</code>,
+                        <code class="blue">blue</code> or  <code class="pinkred">pinkred</code> on the main table element!
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <table class="straight">
+                                <thead>
+                                    <tr>
+                                        <th width="55%">Game Title</th>
+                                        <th width="30%">Developer</th>
+                                        <th align="center" width="15%">Release</th>
+                                    </tr>
+                                </thead>
+
+                                <tfoot>
+                                    <tr>
+                                        <th width="55%">Game Title</th>
+                                        <th width="30%">Developer</th>
+                                        <th align="center" width="15%">Release</th>
+                                    </tr>
+                                </tfoot>
+
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Any Generic Title<br />
+                                            <small>Exclusive for PlayStation 4</small>
+                                        </td>
+                                        <td>Electronic Farts</td>
+                                        <td align="center"><small>2018-12-31</small></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Any Generic Title<br />
+                                            <small>Exclusive for PlayStation 4</small>
+                                        </td>
+                                        <td>Electronic Farts</td>
+                                        <td align="center"><small>2018-12-31</small></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Any Generic Title<br />
+                                            <small>Exclusive for PlayStation 4</small>
+                                        </td>
+                                        <td>Electronic Farts</td>
+                                        <td align="center"><small>2018-12-31</small></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Any Generic Title<br />
+                                            <small>Exclusive for PlayStation 4</small>
+                                        </td>
+                                        <td>Electronic Farts</td>
+                                        <td align="center"><small>2018-12-31</small></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Any Generic Title<br />
+                                            <small>Exclusive for PlayStation 4</small>
+                                        </td>
+                                        <td>Electronic Farts</td>
+                                        <td align="center"><small>2018-12-31</small></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;table class="straight"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;!-- Your Cells --&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;!-- Your Cells --&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;!-- Your Cells --&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+                    </div>
+                </main>
+                <aside class="side-content">
+                    <div class="side-navigation" data-handle="menuspy">
+                        <div class="navigation-title">Table of Contents</div>
+                        <ul class="toc-navi">
+                            <li><a href="#headers">Headers & Paragraphs</a></li>
+                            <li>
+                                <a href="#inline-elements">Inline Text-Elements</a>
+                                <ul class="toc-sub-navi">
+                                    <li><a href="#mark">Marked Text</a></li>
+                                    <li><a href="#q">Inline Quotation</a></li>
+                                    <li><a href="#abbr">Abbr, Acronym & Def</a></li>
+                                    <li><a href="#code">Code Fragment</a></li>
+                                    <li><a href="#keyboard">Keyboard Input</a></li>
+                                    <li><a href="#sample">Sample Output</a></li>
+                                    <li><a href="#teletype">Teletype Text</a></li>
+                                    <li><a href="#variable">Variable</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#block-elements">Block Text-Elements</a>
+                                <ul class="toc-sub-navi">
+                                    <li><a href="#blockquote">Blockquote & Cite</a></li>
+                                    <li><a href="#address">Address</a></li>
+                                    <li><a href="#source">Source Code</a></li>
+                                    <li><a href="#hr">Horizontal Ruler</a></li>
+                                    <li><a href="#lists">Lists</a></li>
+                                    <li><a href="#dl">Description Lists</a></li>
+                                    <li>
+                                        <a href="#tables">Tables</a>
+                                        <ul>
+                                            <li><a href="#tables-1">+ Header / Footer</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-logo">
+                <a href="https://www.pytes.net" target="_blank" class="footer-image"><div class="synder"></div></a>
+            </div>
+            <div class="container">
+                <div class="container-left text-left">
+                    Copyright &copy; 2016 - 2018 SamBrishes @ pytesNET<br />
+                    Published under the MIT / X11 License
+                </div>
+                <div class="container-right text-right">
+                    Star, Fork and Download on <a href="https://github.com/pytesNET/fur.demo"><span class="octicon octicon-logo-github"></span></a><br />
+                    This Page uses <a href="https://prismjs.com/" target="_blank">prismJS</a> and <a href="https://github.com/lcdsantos/menuspy" target="_blank">MenuSpy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="js-footer">
+            <!-- Demonstration Scripts -->
+        </div>
+    </body>
+</html>

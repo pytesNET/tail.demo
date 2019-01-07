@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="content-language" content="en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>fur.demo - The default demonstration page for tail.&lt;projects&gt;</title>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png?v=2.0.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png?v=2.0.0" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png?v=2.0.0" />
+        <link rel="manifest" href="../assets/images/site.webmanifest?v=2.0.0" />
+        <link rel="mask-icon" href="../assets/images/safari-pinned-tab.svg?v=2.0.0" color="#d20f5f" />
+        <link rel="shortcut icon" href="../assets/images/favicon.ico?v=2.0.0" />
+        <meta name="msapplication-TileColor" content="#d20f5f" />
+        <meta name="msapplication-config" content="../assets/images/browserconfig.xml?v=2.0.0" />
+        <meta name="theme-color" content="#d20f5f" />
+
+        <!-- Common -->
+        <meta name="author" content="SamBrishes, pytesNET" />
+        <meta name="publisher" content="SamBrishes, pytesNET" />
+        <meta name="copyright" content="SamBrishes, pytesNET" />
+
+        <meta name="name" content="fur.demo - The default demonstration page for tail.projects" />
+        <meta name="description" content="This repository is just the default demonstration page for all tail projects developed by pytesNET." />
+        <meta name="keywords" content="Demonstration, Page, pytesNET" />
+
+        <meta itemprop="name" content="fur.demo - The default demonstration page for tail.projects" />
+        <meta itemprop="description" content="This repository is just the default demonstration page for all tail projects developed by pytesNET." />
+        <meta itemprop="keywords" content="Demonstration, Page, pytesNET" />
+
+        <!-- Dublin Core -->
+        <meta name="DC.Language" content="en" />
+        <meta name="DC.Creator" content="SamBrishes, pytesNET" />
+        <meta name="DC.Publisher" content="SamBrishes, pytesNET" />
+        <meta name="DC.Rights" content="SamBrishes, pytesNET" />
+        <meta name="DC.Description" content="This repository is just the default demonstration page for all tail projects developed by pytesNET." />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="pytesNET" />
+        <meta name="twitter:creator" content="pytesNET" />
+        <meta name="twitter:title" content="fur.demo - The default demonstration page for tail.projects" />
+        <meta name="twitter:description" content="This repository is just the default demonstration page for all tail projects developed by pytesNET." />
+
+        <!-- Open Graph -->
+        <meta name="og:type" content="website" />
+        <meta name="og:url" content="http://pytesNET.github.io/fur.demo" />
+        <meta name="og:locale" content="en" />
+        <meta name="og:title" content="fur.demo - The default demonstration page for tail.projects" />
+        <meta name="og:site_name" content="fur.demo - The default demonstration page for tail.projects" />
+        <meta name="og:description" content="This repository is just the default demonstration page for all tail projects developed by pytesNET." />
+
+        <!-- Assets -->
+        <link type="text/css" rel="stylesheet" href="../assets/css/octicons.css?ver=8.1.0" />
+        <link type="text/css" rel="stylesheet" href="../assets/css/fur.demo-general.css?ver=3.0.0" />
+        <link type="text/css" rel="stylesheet" href="../assets/css/fur.demo-design.css?ver=3.0.0" />
+        <link type="text/css" rel="stylesheet" href="../assets/css/fur.demo-elements.css?ver=3.0.0" />
+        <link type="text/css" rel="stylesheet" href="../assets/css/fur.demo-responsive.css?ver=3.0.0" />
+        <link type="text/css" rel="stylesheet" href="../assets/css/fur.demo-invert.css?ver=3.0.0" />
+        <link type="text/css" rel="stylesheet" href="../assets/css/fur.demo-custom.css?ver=3.0.0" />
+        <script type="text/javascript" src="../assets/js/menuspy.min.js?ver=1.15.0"></script>
+        <script type="text/javascript" src="../assets/js/prism.min.js?ver=1.15.0"></script>
+        <script type="text/javascript" src="../assets/js/fur.demo.js?ver=3.0.0"></script>
+
+        <!-- Source -->
+        <!--<link type="text/css" rel="stylesheet" href="../source/css/tail.file.css?ver=0.x.x" />-->
+        <!--<script type="text/javascript" src="../source/js/tail.file.js?ver=0.x.x"></script>-->
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="container-left">
+                    <a href="https://pytesnet.github.io/fur.demo" class="tail">
+                        <div class="tail-logo">
+                            <div class="tail-logo-circle"></div>
+                        </div>
+                        <div class="tail-project">
+                            <span class="tail-title">fur.<b>demo</b></span>
+                            <span class="tail-version">3.0.0 - <b>Stable</b></span>
+                        </div>
+                    </a>
+                    <div class="tail-dropdown">
+                        <div class="tail-dropdown-button">More<span>tail.projects</span></div>
+                        <div class="tail-dropdown-inner">
+                            <ul class="projects">
+                                <li class="item"><a href="https://github.pytes.net/tail.select">
+                                    <span class="item-title">tail.<b>select</b></span>
+                                    <span class="item-description">Make Select Fields beautiful again</span>
+                                </a></li>
+
+                                <li class="item"><a href="https://github.pytes.net/tail.writer">
+                                    <span class="item-title">tail.<b>writer</b></span>
+                                    <span class="item-description">Turn Textareas into Markdown Editors</span>
+                                </a></li>
+
+                                <li class="item"><a href="https://github.pytes.net/tail.DateTime">
+                                    <span class="item-title">tail.<b>DateTime</b></span>
+                                    <span class="item-description">Show a beautiful Date/Time Picker</span>
+                                </a></li>
+
+                                <li class="item"><a href="https://github.pytes.net/tail.BBSolid">
+                                    <span class="item-title">tail.<b>BBSolid</b></span>
+                                    <span class="item-description">Parse BBCode in valid HTML 5</span>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-right text-right">
+                    <ul class="main-navi">
+                        <li class="navi-item has-submenu active">
+                            <a href="../index.html">Demo</a>
+                            <ul class="sub-navi">
+                                <li class="navi-item"><a href="./0-html-unit.html">HTML / CSS Unit</a></li>
+                                <li class="navi-item"><a href="./1-web-elements.html">Web Elements</a></li>
+                                <li class="navi-item"><a href="./2-page-components.html">Page Components</a></li>
+                                <li class="navi-item"><a href="./3-javascript-methods.html">JavaScript Methods</a></li>
+                            </ul>
+                        </li>
+                        <li class="navi-item item-internal"><a href="./docs.html">Docs</a></li>
+
+                        <li class="navi-item item-github hover">
+                            <a href="https://github.com/pytesNET/fur.demo/tarball/master">.TAR</a>
+                            <a href="https://www.github.com/pytesNET/fur.demo"><span class="octicon octicon-mark-github"></span></a>
+                            <a href="https://www.twitter.com/pytesNET" target="_blank"><span class="twitter"></span></a>
+                            <a href="https://github.com/pytesNET/fur.demo/zipball/master">.ZIP</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="toolbar">
+            <div class="container">
+                <div class="container-left test-left">
+                    <span class="label label-secondary label-outline toolbar-title">Written in</span>
+                    <ul class="languages">
+                        <li><span class="label label-less" data-tooltip="LESS">LESS</span></li>
+                        <li><span class="label label-css" data-tooltip="CSS">CSS</span></li>
+                        <li><span class="label label-javascript" data-tooltip="Vanilla JavaScript">JavaScript</span></li>
+                        <li><span class="label label-typescript" data-tooltip="TypeScript">TypeScript</span></li>
+                        <li><span class="label label-coffeescript" data-tooltip="CoffeeScript">CoffeeScript</span></li>
+                        <li><span class="label label-python" data-tooltip="Python 3">Python</span></li>
+                        <li><span class="label label-php" data-tooltip="PHP 5 / 7">PHP</span></li>
+                    </ul>
+                </div>
+                <div class="container-right text-right">
+                    <ul class="browsers">
+                        <li class="browser-firefox" data-tooltip="Mozilla Firefox"></li>
+                        <li class="browser-chrome" data-tooltip="Google Chrome"></li>
+                        <li class="browser-opera" data-tooltip="Opera"></li>
+                        <li class="browser-safari" data-tooltip="Apple Safari"></li>
+                        <li class="browser-edge" data-tooltip="Microsoft Edge"></li>
+                        <li class="browser-ie" data-tooltip="Internet Explorer"></li>
+                    </ul>
+                    <span class="label label-secondary label-outline toolbar-title">Supported</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="actionbar">
+            <div class="container">
+                <div class="actionbar-inner split">
+                    <div class="text-left">
+                        <div class="action-select">
+                            <div class="select-icon"><span class="octicon octicon-paintcan"></span></div>
+                            <select id="change-design">
+                                <option value="default">Design: Default White</option>
+                                <option value="harx">Design: Invert Black</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="action-select">
+                            <div class="select-icon"><span class="octicon octicon-book"></span></div>
+                            <select id="change-locale">
+                                <option value="en">Language: English</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-layout">
+            <div class="container">
+                <main class="main-content">
+                    <h1 id="html-css-unit" class="underlined">Web Elements</h1>
+                    <p>
+                        While the HTML / CSS Unit Demonstration page just shows the default HTML Unit, although with some adjustments using
+                        special classnames, this page will introduce you into the templates environment and "creations". But let's have a look
+                        about our Form / Field / Button Sets and elements, which didn't found a place on our 1st Chapter (which was already too long).
+                    </p>
+
+                    <h2 id="form" class="underlined">Form Elements</h2>
+                    <p>
+                        Form elements are necessary on EVERY Website who allows user inputs or provide contact forms or something else. Our demonstration pages
+                        doesn't allow such special stuff, but we still need them to show of some of our projects. We're using this pages also for our development,
+                        so it is also important for CSS / Unit testing within our projects.
+                    </p>
+
+                    <h3 id="input">Input Fields</h3>
+                    <p>
+                        We're offering 5 different-sized input fields, which can combined with up to 7 different class names, who only changes the width of the fields.
+                        Each state (such as "hover", "focus" and "disabled") can also be set using the same-named classname value.
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <div class="field">
+                                <input type="text" class="input-master" placeholder="Master Field" />
+                            </div>
+                            <div class="field">
+                                <input type="text" class="input-large" placeholder="Large Field" />
+                            </div>
+                            <div class="field">
+                                <input type="text" class="input-default" placeholder="Default Field" />
+                            </div>
+                            <div class="field">
+                                <input type="text" class="input-medium" placeholder="Medium Field" />
+                            </div>
+                            <div class="field">
+                                <input type="text" class="input-small" placeholder="Small Field" />
+                            </div>
+
+                            <h4>Field Widths</h4>
+                            <div class="field">
+                                <input type="text" class="full-width" placeholder="Full Width" />
+                            </div>
+                            <div class="field">
+                                <input type="text" class="half-width" placeholder="Half Width" />
+                            </div>
+                            <div class="field">
+                                <input type="text" class="master-width" placeholder="Master Width" />
+                            </div>
+                            <div class="field">
+                                <input type="text" class="large-width" placeholder="Large Width" />
+                            </div>
+                            <div class="field">
+                                <input type="text" class="default-width" placeholder="Default Width" />
+                            </div>
+                            <div class="field">
+                                <input type="text" class="medium-width" placeholder="Medium Width" />
+                            </div>
+                            <div class="field">
+                                <input type="text" class="small-width" placeholder="Small Width" />
+                            </div>
+                        </div>
+                        <pre class="line-numbers lang-html"><code>&lt;input type="text" class="input-master" placeholder="Master Field" /&gt;
+&lt;input type="text" class="input-large" placeholder="Large Field" /&gt;
+&lt;input type="text" class="input-default" placeholder="Default Field" /&gt;
+&lt;input type="text" class="input-medium" placeholder="Medium Field" /&gt;
+&lt;input type="text" class="input-small" placeholder="Small Field" /&gt;
+
+&lt;input type="text" class="full-width" placeholder="Full Width" /&gt;
+&lt;input type="text" class="half-width" placeholder="Half Width" /&gt;
+&lt;input type="text" class="master-width" placeholder="Master Width" /&gt;
+&lt;input type="text" class="large-width" placeholder="Large Width" /&gt;
+&lt;input type="text" class="default-width" placeholder="Default Width" /&gt;
+&lt;input type="text" class="medium-width" placeholder="Medium Width" /&gt;
+&lt;input type="text" class="small-width" placeholder="Small Width" /&gt;</code></pre>
+                    </div>
+
+                    <h3 id="radio">Radios & Checkboxes</h3>
+                    <p>
+                        Because the default / system-styled / browser-own radio and checkbox fields looks really ugly!
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <div class="split" style="margin:15px 0;">
+                                <div style="padding: 0 15px;">
+                                    <div class="field">
+                                        <input type="checkbox" id="checkbox-1" class="checkbox" /><label for="checkbox-1">Default Checkbox</label>
+                                    </div>
+                                    <div class="field">
+                                        <input type="checkbox" id="checkbox-2" class="checkbox" checked /><label for="checkbox-2">Checked Checkbox</label>
+                                    </div>
+                                    <div class="field">
+                                        <input type="checkbox" id="checkbox-3" class="checkbox" disabled /><label for="checkbox-3">Disabled Checkbox</label>
+                                    </div>
+                                    <div class="field">
+                                        <input type="checkbox" id="checkbox-4" class="checkbox" checked disabled /><label for="checkbox-4">Both Checkbox</label>
+                                    </div>
+                                </div>
+                                <div style="padding: 0 15px;">
+                                    <div class="field">
+                                        <input type="radio" id="radio-1" name="radio-1" class="radio" /><label for="radio-1">Default Radio</label>
+                                    </div>
+                                    <div class="field">
+                                        <input type="radio" id="radio-2" name="radio-1" class="radio" checked /><label for="radio-2">Checked Radio</label>
+                                    </div>
+                                    <div class="field">
+                                        <input type="radio" id="radio-3" name="radio-2" class="radio" disabled /><label for="radio-3">Disabled Radio</label>
+                                    </div>
+                                    <div class="field">
+                                        <input type="radio" id="radio-4" name="radio-2" class="radio" checked disabled /><label for="radio-4">Both Radio</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;input type="checkbox" id="checkbox-1" class="checkbox" /&gt;&lt;label for="checkbox-1"&gt;Default Checkbox&lt;/label&gt;
+&lt;!-- Another Checkboxes --&gt;
+
+&lt;input type="radio" id="radio-1" name="radio-1" class="radio" /&gt;&lt;label for="radio-1"&gt;Default Radio&lt;/label&gt;
+&lt;!-- Another Radioboxes --&gt;</code></pre>
+                    </div>
+
+                    <h3 id="buttons">Buttons</h3>
+                    <p>
+                        Buttons, Buttons everywhere. And they are colorized, as shown below. Please keep in mind, that you need to add the
+                        class name "button" on each non-button element, like on &lt;a&gt; for example. You can also increase and decrease the size
+                        using the respective strings below.
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <div class="text-center" style="margin: 15px 0;">
+                                <button class="button-pinkred">Button</button>
+                                <button class="button-white">Button</button>
+                                <button class="button-black">Button</button>
+                                <button class="button-red">Button</button>
+                                <button class="button-orange">Button</button>
+                                <button class="button-green">Button</button>
+                                <button class="button-blue">Button</button>
+                            </div>
+                            <div class="text-center" style="margin: 15px 0;">
+                                <button class="button-small">Small Button</button>
+                                <button class="button-medium">Medium Button</button>
+                                <button class="button-default">Default Button</button>
+                                <button class="button-large">Large Button</button>
+                                <button class="button-master">Master Button</button>
+                            </div>
+                        </div>
+                        <pre class="line-numbers lang-html"><code>&lt;button class="button-pinkred"&gt;Button&lt;/button&gt;
+&lt;button class="button-white"&gt;Button&lt;/button&gt;
+&lt;button class="button-black"&gt;Button&lt;/button&gt;
+&lt;button class="button-red"&gt;Button&lt;/button&gt;
+&lt;button class="button-orange"&gt;Button&lt;/button&gt;
+&lt;button class="button-green"&gt;Button&lt;/button&gt;
+&lt;button class="button-blue"&gt;Button&lt;/button&gt;
+
+&lt;button class="button-small"&gt;Small Button&lt;/button&gt;
+&lt;button class="button-medium"&gt;Medium Button&lt;/button&gt;
+&lt;button class="button-default"&gt;Default Button&lt;/button&gt;
+&lt;button class="button-large"&gt;Large Button&lt;/button&gt;
+&lt;button class="button-master"&gt;Master Button&lt;/button&gt;</code></pre>
+                    </div>
+
+                    <h3 id="form-set">Form Sets & Combinations</h3>
+                    <p>
+                        Sometimes you want to write / display a beautiful form construct, which looks so pretty, that you don't want to
+                        fill the single form fields to keep the perfection. And the stuff below will help you to create such a beauty in
+                        just some minutes.
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <form class="table">
+                                <div class="form-row">
+                                    <label>Default Input Field</label>
+                                    <div class="form-cell">
+                                        <input type="text" />
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <label>Blocked Radio Fields</label>
+                                    <div class="form-cell">
+                                        <div class="form-radio">
+                                            <input type="radio" id="radio-form-1" class="radio" /><label for="radio-form-1">Radio Field #1</label>
+                                        </div>
+                                        <div class="form-radio">
+                                            <input type="radio" id="radio-form-2" class="radio" /><label for="radio-form-2">Radio Field #2</label>
+                                        </div>
+                                        <div class="form-radio">
+                                            <input type="radio" id="radio-form-3" class="radio" /><label for="radio-form-3">Radio Field #3</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <label>Inline Checkbox Fields</label>
+                                    <div class="form-cell">
+                                        <div class="form-checkbox">
+                                            <input type="checkbox" id="checkbox-form-1" class="checkbox" /><label for="checkbox-form-1">Checkbox #1</label>
+                                            <input type="checkbox" id="checkbox-form-2" class="checkbox" /><label for="checkbox-form-2">Checkbox #2</label>
+                                            <input type="checkbox" id="checkbox-form-3" class="checkbox" /><label for="checkbox-form-3">Checkbox #3</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <label>Textarea Field</label>
+                                    <div class="form-cell">
+                                        <textarea></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;div class="form-row"&gt;
+    &lt;label&gt;Default Input Field&lt;/label&gt;
+    &lt;div class="form-cell"&gt;
+        &lt;input type="text" /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="form-row"&gt;
+    &lt;label&gt;Blocked Radio Fields&lt;/label&gt;
+    &lt;div class="form-cell"&gt;
+        &lt;div class="form-radio"&gt;
+            &lt;input type="radio" id="radio-form-1" class="radio" /&gt;
+            &lt;label for="radio-form-1"&gt;Radio Field #1&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="form-radio"&gt;
+            &lt;input type="radio" id="radio-form-2" class="radio" /&gt;
+            &lt;label for="radio-form-2"&gt;Radio Field #2&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="form-radio"&gt;
+            &lt;input type="radio" id="radio-form-3" class="radio" /&gt;
+            &lt;label for="radio-form-3"&gt;Radio Field #3&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="form-row"&gt;
+    &lt;label&gt;Inline Checkbox Fields&lt;/label&gt;
+    &lt;div class="form-cell"&gt;
+        &lt;div class="form-checkbox"&gt;
+            &lt;input type="checkbox" id="checkbox-form-1" class="checkbox" /&gt;
+            &lt;label for="checkbox-form-1"&gt;Checkbox #1&lt;/label&gt;
+            &lt;input type="checkbox" id="checkbox-form-2" class="checkbox" /&gt;
+            &lt;label for="checkbox-form-2"&gt;Checkbox #2&lt;/label&gt;
+            &lt;input type="checkbox" id="checkbox-form-3" class="checkbox" /&gt;
+            &lt;label for="checkbox-form-3"&gt;Checkbox #3&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="form-row"&gt;
+    &lt;label&gt;Textarea Field&lt;/label&gt;
+    &lt;div class="form-cell"&gt;
+        &lt;textarea&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+
+                    <h4 id="form-inline">Inline Forms</h4>
+                    <p>
+                        You can create "completely inline forms" using the class name <code>inline</code> on a form HTML element, or by using
+                        the class name <code>form-inline</code> on a none form element. You can also create Pseudo-Form Elements using the
+                        class name <code>form-field</code> on a respective container.
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <form class="inline">
+                                <input type="text" class="input-master" placeholder="Master" />
+                                <div class="form-field field-master">Pseudo Field</div>
+                                <button class="button-master">Any Button</button>
+                            </form>
+
+                            <div class="form-inline">
+                                <input type="text" class="input-large" placeholder="Large" />
+                                <div class="form-field field-large">Pseudo Field</div>
+                                <button class="button-large">Any Button</button>
+                            </div>
+
+                            <div class="form-inline">
+                                <input type="text" placeholder="Default" />
+                                <div class="form-field">Pseudo Field</div>
+                                <button>Any Button</button>
+                            </div>
+
+                            <div class="form-inline">
+                                <input type="text" class="input-medium" placeholder="Medium" />
+                                <div class="form-field field-medium">Pseudo Field</div>
+                                <button class="button-medium">Any Button</button>
+                            </div>
+
+                            <div class="form-inline">
+                                <input type="text" class="input-small" placeholder="Small" />
+                                <div class="form-field field-small">Pseudo Field</div>
+                                <button class="button-small">Any Button</button>
+                            </div>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;form class="inline"&gt;
+    &lt;input type="text" /&gt;
+    &lt;div class="form-field"&gt;Pseudo Field&lt;/div&gt;
+    &lt;button&gt;Any Button&lt;/button&gt;
+&lt;/form&gt;
+
+&lt;div class="form-inline"&gt;
+    &lt;input type="text" /&gt;
+    &lt;div class="form-field"&gt;Pseudo Field&lt;/div&gt;
+    &lt;button&gt;Any Button&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+
+                    <h2 id="grid" class="underlined">Grids & Containers</h2>
+                    <p>
+                        We're also using a GRID System as known from Bootstrap (and other frameworks), but we are already satisfied with "8 Cells"
+                        because our content area isn't "wide enough" to split them into 12 different containers. The container system works in a (known
+                        and standardized) <code>.grid</code> &gt; <code>.row</code> &gt; <code>.cell</code> manier, while the "row" container can be
+                        skipped if you're just using one single "row", otherwise the <code>.row</code> is necessary.
+                    </p>
+                    <p>
+                        You can also use the additional class name <code>.bordered</code> on the main GRID System, to make EACH cell bordered, or on
+                        the single cell itself to just "border" the cell itself. Use the additional classname <code>.cell-space-&lt;num&gt;</code> to
+                        "skip" some cells before as shown on the second example below.
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <div class="grid bordered" style="margin:50px 0 15px 0;">
+                                <div class="row">
+                                    <div class="cell-1 text-center"><code>.cell-1</code></div>
+                                    <div class="cell-1 text-center"><code>.cell-1</code></div>
+                                    <div class="cell-1 text-center"><code>.cell-1</code></div>
+                                    <div class="cell-1 text-center"><code>.cell-1</code></div>
+                                    <div class="cell-1 text-center"><code>.cell-1</code></div>
+                                    <div class="cell-1 text-center"><code>.cell-1</code></div>
+                                    <div class="cell-1 text-center"><code>.cell-1</code></div>
+                                    <div class="cell-1 text-center"><code>.cell-1</code></div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell-2 text-center"><code>.cell-2</code></div>
+                                    <div class="cell-2 text-center"><code>.cell-2</code></div>
+                                    <div class="cell-2 text-center"><code>.cell-2</code></div>
+                                    <div class="cell-2 text-center"><code>.cell-2</code></div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell-3 text-center"><code>.cell-3</code></div>
+                                    <div class="cell-2 text-center"><code>.cell-2</code></div>
+                                    <div class="cell-3 text-center"><code>.cell-3</code></div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell-4 text-center"><code>.cell-4</code></div>
+                                    <div class="cell-4 text-center"><code>.cell-4</code></div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell-5 text-center"><code>.cell-5</code></div>
+                                    <div class="cell-2 text-center"><code>.cell-2</code></div>
+                                    <div class="cell-1 text-center"><code>.cell-1</code></div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell-6 text-center"><code>.cell-6</code></div>
+                                    <div class="cell-2 text-center"><code>.cell-2</code></div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell-1 text-center"><code>.cell-1</code></div>
+                                    <div class="cell-7 text-center"><code>.cell-7</code></div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell-8 text-center"><code>.cell-8</code></div>
+                                </div>
+                            </div>
+
+                            <div class="grid" style="margin:50px 0 15px 0;">
+                                <div class="cell-2 cell-space-2 bordered text-center"><code>.cell-2.cell-space-2</code></div>
+                                <div class="cell-2 cell-space-2 bordered text-center"><code>.cell-2.cell-space-2</code></div>
+                            </div>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;div class="grid bordered"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="cell-1 text-center"&gt;&lt;!-- Content --&gt;&lt;/div&gt;
+        &lt;!-- Another Cells --&gt;
+    &lt;/div&gt;
+    &lt;!-- Another Rows --&gt;
+&lt;/div&gt;
+
+&lt;div class="grid"&gt;
+    &lt;div class="cell-2 cell-space-2 bordered text-center"&gt;&lt;!-- Content --&gt;&lt;/div&gt;
+    &lt;div class="cell-2 cell-space-2 bordered text-center"&gt;&lt;!-- Content --&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+
+                    <h3 id="split">Split Container</h3>
+                    <p>
+                        Sometimes the GRID System is a bit "too much", especially if you just want 2 same-sized container elements. We implemented
+                        2 different ways to handle such a situation: Using <code>.container-left</code> and <code>.container-right</code> directly
+                        after the main <code>.container</code> area is perfect to split your content directly into 2 parts (this method uses "floats").
+                        The second way is the <code>.split</code> classname, as shown below (this method uses tables/table-cells).
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <div class="split separated" style="margin:50px 0 15px 0;">
+                                <div style="padding:10px;">
+                                    This method will uses the very first and very last element within the main container.
+                                    Everything between gets hidden (Check out the Source Code below)!
+                                </div>
+                                <p>This should be hidden</p>
+                                <div style="padding:10px;">
+                                    This method uses <code>table</code> and <code>table-cell</code> as display styles! You
+                                    can also add the class name <code>separated</code> to show a border between both cells!
+                                </div>
+                            </div>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;div style="padding:10px;"&gt;
+    This method will uses the very first and very last element within the main container.
+    Everything between gets hidden (Check out the Source Code below)!
+&lt;/div&gt;
+&lt;p&gt;This should be hidden&lt;/p&gt;
+&lt;div style="padding:10px;"&gt;
+    This method uses &lt;code&gt;table&lt;/code&gt; and &lt;code&gt;table-cell&lt;/code&gt; as display styles! You
+    can also add the class name &lt;code&gt;separated&lt;/code&gt; to show a border between both cells!
+&lt;/div&gt;</code></pre>
+                    </div>
+
+                    <h2 id="labels" class="underlined">Labels</h2>
+                    <p>
+                        Sometimes it is really important to label something and we're just using it to show the respective languages
+                        and something "not-so-important" else. Therefore you will find many different labels below, which look all
+                        almost the same, because this languages doesn't like creative colors!
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <div class="text-center" style="margin:15px 0;">
+                                <span class="label label-primary">Primary</span>
+                                <span class="label label-secondary">White</span>
+                                <span class="label label-black">Black</span>
+                                <span class="label label-red">Red</span>
+                                <span class="label label-orange">Orange</span>
+                                <span class="label label-yellow">Yellow</span>
+                                <span class="label label-green">Green</span>
+                                <span class="label label-blue">Blue</span>
+                            </div>
+                            <div class="text-center" style="margin:15px 0;">
+                                <span class="label label-js">JavaScript</span>
+                                <span class="label label-cs">CoffeeScript</span>
+                                <span class="label label-ts">TypeScript</span>
+                                <span class="label label-css">CSS</span>
+                                <span class="label label-sass">SASS</span>
+                                <span class="label label-less">LESS</span>
+                                <span class="label label-php">PHP</span>
+                                <span class="label label-python">Python</span>
+                            </div>
+                            <div class="text-center" style="margin:15px 0;">
+                                <span class="label label-outline label-primary">Primary</span>
+                                <span class="label label-outline label-secondary">White</span>
+                                <span class="label label-outline label-black">Black</span>
+                                <span class="label label-outline label-red">Red</span>
+                                <span class="label label-outline label-orange">Orange</span>
+                                <span class="label label-outline label-yellow">Yellow</span>
+                                <span class="label label-outline label-green">Green</span>
+                                <span class="label label-outline label-blue">Blue</span>
+                            </div>
+                            <div class="text-center" style="margin:15px 0;">
+                                <span class="label label-outline label-js">JavaScript</span>
+                                <span class="label label-outline label-cs">CoffeeScript</span>
+                                <span class="label label-outline label-ts">TypeScript</span>
+                                <span class="label label-outline label-css">CSS</span>
+                                <span class="label label-outline label-sass">SASS</span>
+                                <span class="label label-outline label-less">LESS</span>
+                                <span class="label label-outline label-php">PHP</span>
+                                <span class="label label-outline label-python">Python</span>
+                            </div>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;span class="label label-primary"&gt;Primary&lt;/span&gt;
+&lt;span class="label label-secondary"&gt;White&lt;/span&gt;
+&lt;span class="label label-black"&gt;Black&lt;/span&gt;
+&lt;span class="label label-red"&gt;Red&lt;/span&gt;
+&lt;span class="label label-orange"&gt;Orange&lt;/span&gt;
+&lt;span class="label label-yellow"&gt;Yellow&lt;/span&gt;
+&lt;span class="label label-green"&gt;Green&lt;/span&gt;
+&lt;span class="label label-blue"&gt;Blue&lt;/span&gt;
+
+&lt;span class="label label-js"&gt;JavaScript&lt;/span&gt;
+&lt;span class="label label-cs"&gt;CoffeeScript&lt;/span&gt;
+&lt;span class="label label-ts"&gt;TypeScript&lt;/span&gt;
+&lt;span class="label label-css"&gt;CSS&lt;/span&gt;
+&lt;span class="label label-sass"&gt;SASS&lt;/span&gt;
+&lt;span class="label label-less"&gt;LESS&lt;/span&gt;
+&lt;span class="label label-php"&gt;PHP&lt;/span&gt;
+&lt;span class="label label-python"&gt;Python&lt;/span&gt;</code></pre>
+                    </div>
+
+                    <h2 id="message" class="underlined">Message Boxes</h2>
+                    <p>
+                        There was a time, where the boxes below has been called ".status" which is definitely the better name to
+                        describe such boxes. "Message Boxes" sounds more like something between a "Full" Popup and a Status Box.
+                        I really don't know why we renamed this elements into ".message" but I will try to get the old name back.
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <div class="message">
+                                <div class="message-inner">A Plain Status Message</div>
+                            </div>
+                            <div class="message message-error">
+                                <div class="message-inner">A Error Status Message<br /> Also available as Multi-Line Message.</div>
+                            </div>
+                            <div class="message message-warning">
+                                <div class="message-inner">A Warning Status Message<br /> Also available as Multi-Line Message.</div>
+                            </div>
+                            <div class="message message-success">
+                                <div class="message-inner">A Success Status Message<br /> Also available as Multi-Line Message.</div>
+                            </div>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;div class="message"&gt;
+    &lt;div class="message-inner"&gt;A Plain Status Message&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="message message-error"&gt;
+    &lt;div class="message-inner"&gt;A Error Status Message&lt;br /&gt; Also available as Multi-Line Message.&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="message message-warning"&gt;
+    &lt;div class="message-inner"&gt;A Warning Status Message&lt;br /&gt; Also available as Multi-Line Message.&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="message message-success"&gt;
+    &lt;div class="message-inner"&gt;A Success Status Message&lt;br /&gt; Also available as Multi-Line Message.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+
+                    <h2 id="check" class="underlined">Checklists</h2>
+                    <p>
+                        Checklists are just lists with an octicon inside the <code>&lt;li&gt;</code> element. You can use the complete Octicon
+                        reportoire (which is included in Version 8.1.0), and colorize them with the respective helper class name or an custom
+                        color. The the additional class name <code>right</code> top positionate the Icon, as well as the text, to the right.
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <ul class="checklist">
+                                <li><span class="color-green octicon octicon-check"></span> A checked Item</li>
+                                <li><span class="color-red octicon octicon-x"></span> A timed Item</li>
+                                <li><span class="color-orange octicon octicon-question"></span> A questioned Item</li>
+                                <li><span class="color-blue octicon octicon-info"></span> A infod Item</li>
+                                <li><span class="color-black octicon octicon-mark-github"></span> A GitHubd Item</li>
+                                <li><span class="color-pinkred octicon octicon-squirrel"></span> A squirreld Item</li>
+                            </ul>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;ul class="checklist"&gt;
+    &lt;li&gt;&lt;span class="color-green octicon octicon-check"&gt;&lt;/span&gt; &lt;!-- --&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span class="color-red octicon octicon-x"&gt;&lt;/span&gt; &lt;!-- --&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span class="color-orange octicon octicon-question"&gt;&lt;/span&gt; &lt;!-- --&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span class="color-blue octicon octicon-info"&gt;&lt;/span&gt; &lt;!-- --&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span class="color-black octicon octicon-mark-github"&gt;&lt;/span&gt; &lt;!-- --&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span class="color-pinkred octicon octicon-squirrel"&gt;&lt;/span&gt; &lt;!-- --&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                    </div>
+
+                    <h2 id="github" class="underlined">GitHub Buttons</h2>
+                    <p>
+                        GitHub gets his own special button for black and white deisgns, as shown below.
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <div class="text-center">
+                                <a href="#" class="github-special">Written with <span class="octicon octicon-heart"></span> on <span class="octicon octicon-mark-github"></span></a>
+                            </div>
+                            <div class="text-center bg-black radius-5" style="margin-top:15px;padding:15px;">
+                                <a href="#" class="github-special-white">Written with <span class="octicon octicon-heart"></span> on <span class="octicon octicon-mark-github"></span></a>
+                            </div>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;a href="#" class="github-special"&gt;
+    Written with &lt;span class="octicon octicon-heart"&gt;&lt;/span&gt; on &lt;span class="octicon octicon-mark-github"&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;a href="#" class="github-special-white"&gt;
+    Written with &lt;span class="octicon octicon-heart"&gt;&lt;/span&gt; on &lt;span class="octicon octicon-mark-github"&gt;&lt;/span&gt;
+&lt;/a&gt;</code></pre>
+                    </div>
+
+                    <h2 id="browsers" class="underlined">Browser Icons</h2>
+                    <p>
+                        There are 2 theories about the way how the following icons has been integrated. 1. I was too lazy to embed the icons directly
+                        in the octicons font (which I "rendered" using the IcoMoon.io Web Application), 2. This way allows to preserve the multi-color
+                        styled browser icon design.
+                    </p>
+                    <p>
+                        The current supported browser are <code>.browser-firefox</code>, <code>.browser-chrome</code>, <code>.browser-opera</code>
+                        <code>.browser-safari</code>, <code>.browser-edge</code> and <code>.browser-ie</code>. This class names just "holds" the respective
+                        SVG Graphics, use <code>.browser</code> within the same element to get a basic container structure. You can also wrap this element
+                        within another container, which uses <code>.browser-text</code> as shown below!
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <div class="browser-text" style="margin:10px 0;"><span class="browser browser-firefox"></span> Mozilla Firefox</div>
+                            <div class="browser-text" style="margin:10px 0;"><span class="browser browser-chrome"></span> Google Chrome</div>
+                            <div class="browser-text" style="margin:10px 0;"><span class="browser browser-opera"></span> Opera</div>
+                            <div class="browser-text" style="margin:10px 0;"><span class="browser browser-safari"></span> Apple Safari</div>
+                            <div class="browser-text" style="margin:10px 0;"><span class="browser browser-edge"></span> Microsoft Edge</div>
+                            <div class="browser-text" style="margin:10px 0;"><span class="browser browser-ie"></span> Internet Explorer</div>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;div class="browser-text" style="margin:10px 0;"&gt;
+    &lt;span class="browser browser-firefox"&gt;&lt;/span&gt; Mozilla Firefox
+&lt;/div&gt;
+&lt;div class="browser-text" style="margin:10px 0;"&gt;
+    &lt;span class="browser browser-chrome"&gt;&lt;/span&gt; Google Chrome
+&lt;/div&gt;
+&lt;div class="browser-text" style="margin:10px 0;"&gt;
+    &lt;span class="browser browser-opera"&gt;&lt;/span&gt; Opera
+&lt;/div&gt;
+&lt;div class="browser-text" style="margin:10px 0;"&gt;
+    &lt;span class="browser browser-safari"&gt;&lt;/span&gt; Apple Safari
+&lt;/div&gt;
+&lt;div class="browser-text" style="margin:10px 0;"&gt;
+    &lt;span class="browser browser-edge"&gt;&lt;/span&gt; Microsoft Edge
+&lt;/div&gt;
+&lt;div class="browser-text" style="margin:10px 0;"&gt;
+    &lt;span class="browser browser-ie"&gt;&lt;/span&gt; Internet Explorer
+&lt;/div&gt;</code></pre>
+                    </div>
+
+                    <h2 id="example" class="underlined">Example Container</h2>
+                    <p>
+                        The example container is also a part of the documentation / demonstration template. Maybe we're using it there too, I don't know
+                        I'm currently still designing the theme itself. Should I really implement the demo container within a demo container? Nah... It
+                        is late, I'm tired.
+                    </p>
+                    <div class="example">
+                        <div class="showcase">
+                            <div class="example-title">Example</div>
+                            <div class="example">
+                                <div class="showcase">
+                                    <div class="example-title">Example</div>
+                                    <p>The demo Content example!</p>
+                                </div>
+<pre class="line-numbers lang-html"><code>&lt;div class="example"&gt;
+    &lt;div class="showcase"&gt;
+        &lt;div class="example-title"&gt;Example&lt;/div&gt;
+        The demo Content example!
+    &lt;/div&gt;
+    &lt;pre class="line-numbers lang-html"&gt;&lt;code&gt;&amp;lt;div class="example"&amp;gt;
+        &amp;lt;div class="showcase"&amp;gt;
+            &amp;lt;div class="example-title"&amp;gt;Example&amp;lt;/div&amp;gt;
+            The demo Content example!
+        &amp;lt;/div&amp;gt;
+        &amp;lt;pre class="line-numbers lang-html"&amp;gt;&amp;lt;code&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+    &amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+<pre class="line-numbers lang-html"><code>&lt;div class="example"&gt;
+    &lt;div class="showcase"&gt;
+        &lt;div class="example-title"&gt;Example&lt;/div&gt;
+        The demo Content example!
+    &lt;/div&gt;
+    &lt;pre class="line-numbers lang-html"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </main>
+                <aside class="side-content">
+                    <div class="side-navigation" data-handle="menuspy">
+                        <div class="navigation-title">Table of Contents</div>
+                        <ul class="toc-navi">
+                            <li>
+                                <a href="#form">Form Elements</a>
+                                <ul class="toc-sub-navi">
+                                    <li><a href="#input">Input Fields</a></li>
+                                    <li><a href="#radio">Radio & Checkboxes</a></li>
+                                    <li><a href="#buttons">Buttons</a></li>
+                                    <li>
+                                        <a href="#form-set">Form Sets & Combis</a>
+                                        <ul clasa="toc-sub-navi">
+                                            <li><a href="#form-inline">Inline Form</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#grid">Grids & Containers</a>
+                                <ul class="toc-sub-navi">
+                                    <li><a href="#split">Split Container</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#labels">Labels</a></li>
+                            <li><a href="#message">Message Boxes</a></li>
+                            <li><a href="#check">Checklists</a></li>
+                            <li><a href="#github">GitHub Buttons</a></li>
+                            <li><a href="#browsers">Browser Icons</a></li>
+                            <li><a href="#example">Example Container</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-logo">
+                <a href="https://www.pytes.net" target="_blank" class="footer-image"><div class="synder"></div></a>
+            </div>
+            <div class="container">
+                <div class="container-left text-left">
+                    Copyright &copy; 2016 - 2018 SamBrishes @ pytesNET<br />
+                    Published under the MIT / X11 License
+                </div>
+                <div class="container-right text-right">
+                    Star, Fork and Download on <a href="https://github.com/pytesNET/fur.demo"><span class="octicon octicon-logo-github"></span></a><br />
+                    This Page uses <a href="https://prismjs.com/" target="_blank">prismJS</a> and <a href="https://github.com/lcdsantos/menuspy" target="_blank">MenuSpy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="js-footer">
+            <!-- Demonstration Scripts -->
+        </div>
+    </body>
+</html>

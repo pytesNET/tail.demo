@@ -1,0 +1,82 @@
+/*
+ |  fur.demo    The default demonstration website for all tail projects @ pytesNET.
+ |  @file       ./css/fur.demo-responsive.css
+ |  @author     SamBrishes <sam@pytes.net>
+ |  @version    3.0.0 - Beta
+ |
+ |  @website    https://github.com/pytesNET/fur.demo
+ |  @license    X11 / MIT License
+ |  @copyright  Copyright © 2016 - 2019 SamBrishes, pytesNET <info@pytes.net>
+ */
+
+/* @start RESPONSIVE */
+@media only screen and (max-width: 1200px){
+    .container{
+        width: 100%;
+        min-width: 100%;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .content section.demo-content .side-by-side{
+        display: block;
+    }
+    .content section.demo-content .side-by-side > aside,
+    .content section.demo-content .side-by-side > aside.aside-25,
+    .content section.demo-content .side-by-side > aside.aside-33,
+    .content section.demo-content .side-by-side > aside.aside-50,
+    .content section.demo-content .side-by-side > aside.aside-66,
+    .content section.demo-content .side-by-side > aside.aside-75{
+        width: 100%;
+        display: block;
+    }
+    .content section.demo-content .side-by-side.separated > aside{
+        border-right: 0;
+        border-bottom: 1px solid #d0d0d0;
+    }
+    .content section.demo-content .side-by-side.bordered > aside:first-child{
+        border-right: 0;
+    }
+    .content section.demo-content .side-by-side.separated > aside:last-child{
+        border-bottom: 0;
+    }
+    html.invert .content section.demo-content .side-by-side.separated > aside,
+    .content section.demo-content.invert .side-by-side.separated > aside{
+        border-right: 0;
+        border-bottom-color: rgba(255, 255, 255, 0.2);
+    }
+    .content section.demo-content footer{
+        width: 100%;
+        display: block;
+    }
+}
+@media only screen and (max-width: 750px){
+    .header, .footer{
+        height: auto;
+    }
+    .header .header-left, .header .header-right,
+    .footer .footer-left, .footer .footer-right{
+        float: none;
+        width: 100%;
+        height: auto;
+        display: block;
+        text-align: center;
+    }
+    .docs-content article,
+    .docs-content aside{
+        top: auto;
+        right: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: block;
+        position: static;
+    }
+    .docs-content aside{
+        margin-bottom: 30px;
+    }
+    .docs-content aside ul.docs-navi{
+        margin: 0 auto;
+        position: static;
+    }
+}
+/* @end RESPONSIVE */
